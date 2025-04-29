@@ -18,14 +18,28 @@
     max-width: 148px;
     background-color: white;
     border-radius: 15px;
+    min-height: 333px;
     height: auto;
-    padding: 24px, 48px, 24px, 48px;
-    border: 1px;
-    border-color: aqua;
+    padding: 24px 48px 24px 48px;
+    box-shadow: 35px 76px 23px rgba(0, 0, 0, 0), 22px 49px 21px rgba(0, 0, 0, 0.01), 13px 27px 18px rgba(0, 0, 0, 0.05), 6px 12px 13px rgba(0, 0, 0, 0.09), 1px 3px 7px rgba(0, 0, 0, 0.1);
 }
 
 .cardimg{
     width: 148px;
     height: 148px;
+    margin-bottom: 30px;
 }
+
+.processes{
+    display: flex;
+    gap: 70px;
+}
+
+.vimg{
+    max-width: 259px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 

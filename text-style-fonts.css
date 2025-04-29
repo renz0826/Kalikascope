@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  /* Font families */
+  --font-semi-bold: 'Poppins', sans-serif;
+  --font-medium: 'Poppins', sans-serif;
+  --font-regular: 'Poppins', sans-serif;
+
+  /* Desktop (default) typography */
+  --h1-size: 40px;
+  --h1-weight: 600;
+
+  --h2-size: 32px;
+  --h2-weight: 500;
+
+  --h3-size: 28px;
+  --h3-weight: 500;
+
+  --p-size: 24px;
+  --p-weight: 400;
+
+  --small-size: 20px;
+  --small-weight: 400;
+}
+
+/* Mobile overrides */
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 32px;
+    --h1-weight: 600;
+
+    --h2-size: 24px;
+    --h2-weight: 500;
+
+    --h3-size: 18px;
+    --h3-weight: 500;
+
+    --p-size: 14px;
+    --p-weight: 400;
+
+    --small-size: 12px;
+    --small-weight: 400;
+  }
+}
+
+/* Typography tags */
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  font-family: var(--font-semi-bold);
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  font-family: var(--font-medium);
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  font-family: var(--font-medium);
+}
+
+p {
+  font-size: var(--p-size);
+  font-weight: var(--p-weight);
+  font-family: var(--font-regular);
+}
+
+.small {
+  font-size: var(--small-size);
+  font-weight: var(--small-weight);
+  font-family: var(--font-regular);
+}
+
+/* Base font family */
+body {
+  font-family: var(--font-regular);
+}

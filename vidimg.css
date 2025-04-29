@@ -1,21 +1,37 @@
-.video {
-    max-width: 1200px;
-    max-height: 832px;
+main{
+    padding-left: 360px;
+    padding-right: 360px;
 }
 
-.vid {
-    max-width: 1200px;
-    padding-top: 45px;
-    padding-bottom: 45px;
+.centertitle{
+    text-align: center;
 }
 
-.image {
-    max-width: 1200px;
-    max-height: 832px;
+.video{
+    width: 1200px;
+    height: 832px;
 }
 
-.img {
+.vid{
     max-width: 1200px;
-    padding-top: 45px;
-    padding-bottom: 45px;
-}   
+    height: 500px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.image{
+    width: 1200px;
+    height: 832px;
+}
+
+.img{
+    max-width: 1200px;
+    height: 500px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.courtesy{
+    text-align: right;
+    margin-top: 17px;
+}

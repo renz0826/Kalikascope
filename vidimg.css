@@ -1,0 +1,21 @@
+.video {
+    max-width: 1200px;
+    max-height: 832px;
+}
+
+.vid {
+    max-width: 1200px;
+    padding-top: 45px;
+    padding-bottom: 17px;
+}
+
+.image {
+    max-width: 1200px;
+    max-height: 832px;
+}
+
+.img {
+    max-width: 1200px;
+    padding-top: 45px;
+    padding-bottom: 17px;
+}   

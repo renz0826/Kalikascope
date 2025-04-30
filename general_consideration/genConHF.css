@@ -234,13 +234,14 @@ body {
     --small-weight: 400;
   }
 
-
   html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 500px;
+    
   }
 
   /*Nav Bar*/
@@ -280,24 +281,7 @@ body {
     width: 12.1875rem; 
   }
 
-  .genConsidSec {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .genConsidTitle {
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .genConsidVid {
-    text-align: center;
-  }
-
-  .videoCourt {
-    text-align: right;
-    padding-bottom: 25px;
-  }
 }
 
 

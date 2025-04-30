@@ -1,0 +1,29 @@
+.genConsidSec {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .genConsidTitle {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .genConsidVid {
+    text-align: center;
+    margin: 0px;
+  }
+
+  .videoCourt {
+    text-align: right;
+    padding-bottom: 25px;
+    margin: 0px;
+  }
+
+  .firstP {
+    padding-bottom: 80px;
+  }
+
+  .firstImg {
+    width: 343px;
+
+  }

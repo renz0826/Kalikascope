@@ -1,0 +1,29 @@
+.goalTitle {
+  padding-bottom: 20px;
+}
+
+.goalLayout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.contentLayout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+.goalLayout img {
+    width: 53px;
+}
+
+.iconCards{
+    padding: 15px 15.5px;
+    width: 70%;
+    
+}
+
+

@@ -13,11 +13,14 @@ main{
 .gaia_nav{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .the_gaia{
     width: 600px;
+    margin: 0 auto;
+    display: block;
 }
 
 .welcome1{

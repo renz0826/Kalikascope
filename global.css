@@ -62,10 +62,25 @@ small {
 }
 
 
+main {
+  flex: 1;
+}
 
-/* Base font family */
+html{
+  height: 100%;
+}
 body {
   font-family: var(--font-regular);
+  background-color: #FAF9F6;
+  display: flex; 
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for WebKit browsers (Chrome, Safari) */
 }
 
 * {
@@ -211,9 +226,64 @@ body {
 }
 
 
+/* Footer Styles */
+.footer-section{
+  margin-top: auto;
+  
+}
+.footer-section {
+  margin-top: auto;
+}
+
+.footer {
+  background: linear-gradient(93deg, #8FA856 0%, #4E762E 100%);  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+  font-family: var(--font-regular);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 5rem;
+  align-items: center;
+}
+
+.footer-content img{
+  width: 19.02375rem;
+  height: 9.03813rem;
+}
+
+.footer-content ul {
+  list-style: none;
+  text-align: left;
+  line-height: 3rem;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-content a:hover {
+  color: #FFC964;
+}
+
+.footer-divider {
+  height: 2px;
+  background: white;
+  margin: 3rem auto 0 auto;
+  width: 85rem;
+}
+
+
 
 /*mobile query*/
-@media (min-width: 320px) and (max-width: 768px){
+@media (max-width: 768px){
   /*Fonts*/
   :root {
     --h1-size: 32px;
@@ -273,6 +343,52 @@ body {
   .logo img {
     height: 3.125rem;
     width: 12.1875rem; 
+  }
+
+  .footer {
+    background: linear-gradient(93deg, #8FA856 0%, #4E762E 100%);  color: white;
+    text-align: center;
+    padding: 2rem 2rem;
+    font-family: var(--font-regular);
+  }
+
+  .footer-content img{
+  width: 12.3125rem;
+  height: 5.84963rem;
+  flex-shrink: 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 25.75rem;
+    margin: 0 auto;
+    gap: 0rem;
+    font-weight: 500;
+  }
+
+  .footer-divider {
+    height: 2px;
+    background: white;
+    margin: 0rem auto 0 auto;
+    width: 20rem;
+  }
+
+  .footer-content ul {
+    width: 50%; /* Set a consistent width for the lists */
+    padding: 0;
+    margin: 0 auto;
+    text-align: left; /* Center-align the list items */
+    display: block;
+  }
+  
+  .footer-content ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 }
 

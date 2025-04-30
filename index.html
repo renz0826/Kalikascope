@@ -7,22 +7,26 @@
     <title>Gaia</title>
 </head>
 <body>
-    
-    <section class="gaia">
-        <div class="welcome1">
-            <h1 class="welcome"> Welcome to </h1> <h1 class="welcome_bot"> The Gaia </h1>
-        </div>
-        <div class="gaia_div">
-            <a href ="#"><img class="biodi" src="src/gaia/biodi.png" alt="Biodiversity"></a>
-            <a href ="#"><img class="biotech" src="src/gaia/biotech.png" alt="BioTechnology"></a>
-        </div>
-        <div class="gaia_div">
-            <a href ="#"><img class="gold_rice" src="src/gaia/goldenrice.png" alt="Golden Rice"></a>
-            <a href ="#"><img class="social" src="src/gaia/social.png" alt="Social Issues"></a>   
-        </div>
-        <div class="globe">
-            <img class="globe_bottom" src="src/gaia/globe.png" alt="Globe"> 
-        </div>
-    </section>
+    <main>
+        <section class="gaia">
+            <div class="welcome1">
+                <h1 class="welcome"> Welcome to </h1> <h1 class="welcome_bot"> The Gaia </h1>
+            </div>
+            <div class="gaia    _nav">
+                <img class="the_gaia" src="src/gaia/The_Gaia.png" alt="The Gaia" usemap="#image-map"> 
+                <map name="image-map">
+                    <area alt="Biodiversity" title="Biodiversity" href="biodiversity.html" coords="294,22,275,23,265,25,257,32,239,48,235,59,210,74,206,61,201,43,187,35,141,29,116,42,104,54,89,48,62,32,39,29,18,40,10,54,9,70,13,99,21,115,20,144,7,169,0,194,0,237,0,248,7,253,16,254,24,261,37,264,44,266,51,264,72,257,81,256,90,256,107,257,128,251,149,236,161,234,189,233,197,233,209,233,233,235,253,238,274,238,287,238,294,239,296,27" shape="poly">
+                    <area alt="Biotechnology" title="Biotechnology" href="biotechnology.html" coords="574,266,564,234,554,197,566,186,580,165,584,143,568,116,553,102,547,87,547,73,551,55,531,31,513,31,493,26,476,27,460,43,449,58,434,65,423,61,408,49,400,42,390,29,384,21,374,14,364,7,354,7,334,9,310,14,304,23,302,38,303,56,300,72,298,94,296,115,304,138,308,168,308,180,313,211,303,217,318,221,329,227,334,238,338,252,336,232,340,222,355,215,364,225,373,236,379,253,386,237,400,216,466,225,487,232,494,249,496,258" shape="poly">
+                    <area alt="Golden Rice" title="Golden Rice" href="goldenrice.html" coords="298,279,289,263,289,254,265,255,230,256,191,254,166,252,145,247,142,261,139,269,120,270,113,269,107,265,90,264,78,265,63,271,54,273,25,274,27,307,49,334,70,347,110,376,139,387,155,388,178,395,212,401,246,407,269,408,281,408,297,414" shape="poly">
+                    <area alt="Social Issues" title="" href="social.html" coords="568,280,565,307,553,325,532,344,514,360,513,378,509,402,502,407,465,404,451,402,426,399,385,407,355,412,330,410,319,408,301,412,300,224,316,226,328,252,340,259,341,244,347,228,369,247,387,264,390,257,399,247,402,227,422,223,450,230,478,236,498,270,558,275" shape="poly">
+                </map>
+            </div>
+        </section>
+    </main>
+
+    <script src="mapresizer-min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
 </body>
 </html>

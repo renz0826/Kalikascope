@@ -4,9 +4,20 @@ body{
     background-repeat: no-repeat;
 }
 
-.gaia{
-    max-width: 750px;
-    max-height: 750px;
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gaia_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.the_gaia{
+    width: 600px;
 }
 
 .welcome1{
@@ -19,43 +30,23 @@ body{
     margin-bottom: 40px;
 }
 
-.gaia_div{
-    display: flex;
-    flex-direction: row;
-}
 
-.biodi{
-    max-width: 330px;
-    margin-top: 10px;
-}
+@media (max-width: 768px) {
 
-.biotech{
-    max-width: 310px;
-    margin-left: -20px;
-}
+    body{
+        background-size: 900%;
+    }
 
-.gold_rice{
-    max-width: 287px;
-    margin-top: -65px;
-    margin-left: 32px;
-}
-
-.social{
-    max-width: 288px;
-    margin-top: -88px;
-    margin-left: -1px;
-}
-
-.globe_bottom{
-    max-width: 577px;
-    margin-left: 31px;
-    margin-top: -168px;
-    position: absolute;
-    z-index: -1; 
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
+    main{
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
+    .the_gaia{
+        width: 355px;
+    }
+
     .welcome1{
         flex-direction: column;
         margin-bottom: 30px;
@@ -64,34 +55,6 @@ body{
     .welcome_bot{
         margin-top: -15px;
     }
-    
-    .biodi{
-        max-width: 330px;
-        margin-top: 10px;
-    }
-    
-    .biotech{
-        max-width: 310px;
-        margin-left: -20px;
-    }
-    
-    .gold_rice{
-        max-width: 287px;
-        margin-top: -65px;
-        margin-left: 32px;
-    }
-    
-    .social{
-        max-width: 288px;
-        margin-top: -88px;
-        margin-left: -1px;
-    }
-    
-    .globe_bottom{
-        max-width: 577px;
-        margin-left: 31px;
-        margin-top: -168px;
-        position: absolute;
-        z-index: -1; 
-    }
+
 }
+

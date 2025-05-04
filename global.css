@@ -72,7 +72,7 @@ html {
 }
 body {
   font-family: var(--font-regular);
-  background-color: #FAF9F6;
+  background-color: #FFFFFF;
   display: flex; 
   flex-direction: column;
   min-height: 100vh;
@@ -228,14 +228,6 @@ body::-webkit-scrollbar {
 
 
 /* Footer Styles */
-.footer-section{
-  margin-top: auto;
-  
-}
-.footer-section {
-  margin-top: auto;
-}
-
 .footer {
   background: linear-gradient(93deg, #8FA856 0%, #4E762E 100%);  color: white;
   text-align: center;

@@ -1,0 +1,595 @@
+/*Golden Rice*/
+.goldenbody{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 100%;
+    gap: 120px;
+    margin: 0 auto;
+    
+  }
+  
+  .goldenbg {
+    background: 
+      linear-gradient(180deg, rgba(255, 255, 255, 0.00) 80%, #FFFF 100%), /* Gradient layer */
+      url("src/gaia/bg.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    height: 67.5rem;
+  }
+  
+  
+  
+  .goldensec{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 7.5rem;
+    
+  }
+  
+  
+  
+  .goalsec{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 2.375rem;
+    width: 75rem;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column; 
+    width: 1200px; 
+    margin: 0 auto; 
+  }
+  
+  .video-container video {
+    display: block; 
+    width: 100%;  
+  }
+  
+  .video-container small {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .video-container p {
+    width: 75rem; 
+    text-align: left;
+  }
+  
+  .goal-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.375rem;
+    align-items: center;
+    height: 32.375rem
+  }
+  
+  .card {
+    display: flex;
+    width: 15.5625rem;
+    height: 20.6875rem;
+    padding: 1.5rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+    border-radius: 0.9375rem;
+    background: #FFF;
+    box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 22px 49px 21px 0px rgba(0, 0, 0, 0.01), 13px 27px 18px 0px rgba(0, 0, 0, 0.05), 6px 12px 13px 0px rgba(0, 0, 0, 0.09), 1px 3px 7px 0px rgba(0, 0, 0, 0.10);
+    align-self: stretch;
+    text-align: center;  
+  }
+  
+  .card img{
+    width: 9.25rem;
+    height: 9.25rem;
+    flex-shrink: 0;
+  }
+  
+  
+  .goldprog {
+    display: flex;
+    flex-direction: row; /* Place image and text side by side */
+    align-items: flex-start; /* Align items at the top */
+    gap: 4.375rem; /* Add spacing between the image and text */
+    width: 75rem; /* Set a fixed width for the section */
+    margin: 0 auto; /* Center the section horizontally */
+  }
+  
+  .goldprog img {
+    width: 50%; /* Image takes up half the width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .goldprog .goldprog-text {
+    width: 33.125rem;
+  }
+  
+  .goldprog h2,
+  .goldprog p {
+    margin: 0 0 1.8rem 0; /* Add spacing between text elements */
+  }
+  
+  .goldefficacy{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 2.813rem;
+  }
+  
+  .efflist {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 8.75rem;
+    row-gap: 4.375rem;
+  }
+  
+  .efficacy {
+    display: flex;
+    flex-direction: column; /* Stack the header and paragraph vertically */
+    gap: 1rem; /* Add spacing between the header and the paragraph */
+  }
+  
+  .efficacy-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+  }
+  
+  .efficacy p{
+    width: 33.125rem;
+  }
+  
+  .goldenricecase{
+    width: 75rem;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 2.813rem;
+  }
+  
+  .goldenricecase img{
+    height: 30.75rem; width: 75rem
+  }
+  
+  .issuesec{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 2.813rem;
+  }
+  
+  .issuelist {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 8.75rem;
+    row-gap: 4.375rem;
+  }
+  
+  .issue {
+    display: flex;
+    flex-direction: column; /* Stack the header and paragraph vertically */
+    gap: 1rem; /* Add spacing between the header and the paragraph */
+  }
+  
+  .issue-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+  }
+  
+  .issue p{
+    width: 33.125rem;
+  }
+  
+  .takeawaysec{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    gap: 2.375rem;
+    width: 75rem;
+    margin-bottom: 7.5rem;
+  }
+  
+  .issue-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.375rem;
+    align-items: center;
+  }
+  
+  .issue-cards .card{
+    height: 23.3125rem;
+    width: 15.5625rem;
+  }
+  /*mobile query*/
+  @media (max-width: 768px){
+    /*Fonts*/
+    :root {
+      --h1-size: 32px;
+      --h1-weight: 600;
+  
+      --h2-size: 24px;
+      --h2-weight: 500;
+  
+      --h3-size: 18px;
+      --h3-weight: 500;
+  
+      --p-size: 14px;
+      --p-weight: 400;
+  
+      --small-size: 12px;
+      --small-weight: 400;
+    }
+  
+  
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+  
+    /*Nav Bar*/
+    .hamburger {
+      display: block;
+    }
+  
+    .navbar {
+      justify-content: center;
+    }
+  
+    .navbar ul {
+      justify-content: center;
+      gap: 0; /* remove spacing to center logo perfectly */
+      padding: 0;
+      margin: 0;
+      height: 5rem;
+    }
+  
+    .navbar li:not(.logo-li) {
+      display: none;
+    }
+  
+    .logo-li {
+      margin: 0;
+    }
+  
+    .logo {
+      margin: 0; /* remove giant margin */
+      justify-content: center;
+    }
+  
+  
+    .logo img {
+      height: 3.125rem;
+      width: 12.1875rem; 
+    }
+  
+    .footer {
+      background: linear-gradient(93deg, #8FA856 0%, #4E762E 100%);  color: white;
+      text-align: center;
+      padding: 2rem 2rem;
+      font-family: var(--font-regular);
+    }
+  
+    .footer-content img{
+    width: 12.3125rem;
+    height: 5.84963rem;
+    flex-shrink: 0;
+    }
+  
+    .footer-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: auto;
+      height: 25.75rem;
+      margin: 0 auto;
+      gap: 0rem;
+      font-weight: 500;
+    }
+  
+    .footer-divider {
+      height: 2px;
+      background: white;
+      margin: 0rem auto 0 auto;
+      width: 20rem;
+    }
+  
+    .footer-content ul {
+      width: 50%; /* Set a consistent width for the lists */
+      padding: 0;
+      margin: 0 auto;
+      text-align: left; /* Center-align the list items */
+      display: block;
+    }
+    
+    .footer-content ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    
+    /*awg*/
+    .return_butt{
+      left: calc(50% - 10rem)
+    }
+  
+    .confirm-btn{
+      margin-bottom: 4rem;
+    }
+  
+    .awg-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      width: 20rem;
+      height: 40.375rem;
+      padding: 1rem; /* Optional: Add padding for spacing */
+      gap: 1rem; /* Add spacing between elements */
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+      width: 100%; /* Ensure the container takes full width */
+      height: auto; /* Adjust height as needed */
+    }
+    
+    .awg-card img {
+      width: 18.25rem;
+      height: 10.5rem;
+      object-fit: contain; /* Ensure the image scales properly */
+      margin: 0; /* Remove any extra margin */
+    }
+  
+    .choices-container {
+       display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      justify-content: center;
+  }
+  
+    .result-message{
+      top: 47%;
+    }
+  
+    .modal-content {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      gap: 1rem;
+      height: 30rem;
+    }
+  
+    .modal-content a {
+      padding: 0.5rem 1rem;
+      margin: 0;
+      width: auto; 
+      text-align: center;
+      border-radius: 1rem;
+      background: #8FA856;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  
+    .choices-container .choice-item span {
+      font-size: var(--h3-size);
+    }
+  
+    .goldensec{
+    width: 20rem;
+    margin: 0 auto;
+    gap: 4rem;
+    }
+  
+    .video-container video {
+      width: 320px; /* Set the video width */
+      height: 157px; /* Set the video height */
+      object-fit: cover;
+    }
+  
+    .video-container {
+      width: 320px; /* Ensure the container matches the video size */
+      height: auto; /* Let the height adjust automatically */
+    }
+    .video-container p{
+      width: 20rem;
+    }
+    
+    .video-container small{
+      width: 19.8125rem;
+    }
+  
+    .goalsec {
+      width: 20rem; /* Ensure the parent container has a fixed width */
+      margin: 0 auto; /* Center the parent container */
+      height: 31.625rem;
+    }
+  
+    .goal-cards {
+      display: grid; /* Use grid layout for better control */
+      grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+      gap: 1.5rem 1.1875rem;
+      height: 0rem;
+    }
+  
+    .goal-cards .card {
+      border-radius: 0.9375rem;
+      display: flex;
+      width: 8.6875rem;
+      height: 11.625rem;
+      padding: 0.9375rem 1.125rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9375rem;
+    }
+  
+    .card img{
+      width: 4.625rem;
+      height: 4.625rem;
+    }
+  
+    .goldprog {
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center; /* Center-align the content */
+      gap: 1.5rem; /* Add spacing between elements */
+      width: 20rem; /* Set a smaller width for mobile */
+      margin: 0 auto; /* Center the section horizontally */
+    }
+  
+    .goldprog img {
+      order: 2; /* Move the image below the text */
+      width: 19.9375rem;
+      height: 28.875rem;
+      align-items: center;
+    }
+  
+    .goldprog h2 {
+      text-align: center;
+    }
+  
+    .goldprog .goldprog-text {
+      order: 1; /* Ensure the text stays above the image */
+      width: 100%; /* Text takes up the full width */
+      text-align: left; /* Center-align the text */
+    }
+  
+    .goldprog h2, .goldprog p {
+      margin: 0 0 1.5rem 0;
+  }
+    
+  .efflist {
+    align-items: center;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  
+  .efficacy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 20rem;
+  }
+  
+  .efficacy p {
+    max-width: 20rem;
+  }
+  
+  .efficacy img {
+    max-width: 3.3125rem;
+    max-height: 3.3125rem;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
+  
+  .goldenricecase{
+    width: 20rem;
+  }
+  
+  .goldenricecase img{
+    width: 20rem;
+    height: 12.438rem;
+  }
+  
+  .issuelist {
+    align-items: center;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  
+  .issue {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 20rem;
+  }
+  
+  .issue p {
+    max-width: 20rem;
+  }
+  
+  .issue img {
+    max-width: 3.3125rem;
+    max-height: 3.3125rem;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+  }
+  
+  .goal-cards {
+      display: grid; /* Use grid layout for better control */
+      grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+      gap: 1.5rem 1.1875rem;
+    }
+  
+    .goal-cards .card {
+      border-radius: 0.9375rem;
+      display: flex;
+      width: 8.6875rem;
+      height: 11.625rem;
+      padding: 0.9375rem 1.125rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9375rem;
+    }
+  
+    .card img{
+      width: 4.625rem;
+      height: 4.625rem;
+    }
+  
+  
+    .takeawaysec {
+      width: 20rem; /* Ensure the parent container has a fixed width */
+      margin: 0 auto; /* Center the parent container */
+      height: 31.625rem;
+      margin-bottom: 4rem;
+    }
+  
+    .issue-cards {
+      display: grid; /* Use grid layout for better control */
+      grid-template-columns: repeat(2, 1fr); /* Create 2 columns */
+      gap: 1.5rem 1.1875rem;
+    }
+  
+    .issue-cards .card {
+      border-radius: 0.9375rem;
+      display: flex;
+      width: 8.6875rem;
+      height: 11.625rem;
+      padding: 0.9375rem 1.125rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9375rem;
+    }
+  
+    .card img{
+      width: 4.625rem;
+      height: 4.625rem;
+    }
+  }
+  

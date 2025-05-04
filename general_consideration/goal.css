@@ -16,8 +16,40 @@
     text-align: center;
   }
 
+.goalLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  place-items: center;
+  
+
+}
+
+.goalsText {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.goalCards {
+  height: 200px;
+  width: 166px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
 .goalLayout img {
-    width: 53px;
+    width: 74px;
+}
+
+.goalLayout p{
+  
+  text-align: center;
 }
 
 .iconCards{

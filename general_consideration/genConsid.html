@@ -5,125 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="genConHF.css">
     <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="goal.css">
     <title>Footer-Header</title>
 </head>
 <body>
-<!-- Hamburger Button -->
-<div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
-      <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</div>
-  
-  <!-- Side Menu (hidden by default) -->
-  <aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
-    <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
-        <div class="mobile-menu-bg"></div> 
-        <div class="mobile-menu-content">
-          <a class="logomob">
-            <img src="/src/logo/logo_nav.png" alt="Logo">
-          </a>
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="/src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
-                  Gaia
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="/src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
-                  BioQuest
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="/src/logo/about.png" alt="About Icon" class="menu-icon">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="/src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
-                  Your Feedback
-                </a>
-              </li>
-            </ul>
-          </div>          
-    </nav>
-  </aside>
+  <main>
 
-    <!--Navbar Section-->
-    <header>
-        <nav class="navbar">
+    <section>
+      <!-- Hamburger Button -->
+<div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+    <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<!-- Side Menu (hidden by default) -->
+<aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
+  <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
+      <div class="mobile-menu-bg"></div> 
+      <div class="mobile-menu-content">
+        <a class="logomob">
+          <img src="/src/logo/logo_nav.png" alt="Logo">
+        </a>
           <ul>
-            <li class="logo-li">
-              <a id="home" class="logo">
-                <img src="/src/logo/logo_nav.png" alt="Logo">
+            <li>
+              <a href="#">
+                <img src="/src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
+                Gaia
               </a>
             </li>
-            <li><a>Gaia</a></li>
-            <li><a>BioQuest</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Your Feedback</a></li>
+            <li>
+              <a href="#">
+                <img src="/src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
+                BioQuest
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/logo/about.png" alt="About Icon" class="menu-icon">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="/src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
+                Your Feedback
+              </a>
+            </li>
           </ul>
-        </nav>
-      </header>
+        </div>          
+  </nav>
+</aside>
 
-  <div class="genConsidSec">
-    <div class="genConsidTitle">
-      <h1>General Considerations</h1>
-    </div>
-    <div class="genConsidVid">
-      <div>
-        <img class="firstImg" src="/src/articles images/Ethical debates gene modification/images.jpeg"></img>
+  <!--Navbar Section-->
+  <header>
+      <nav class="navbar">
+        <ul>
+          <li class="logo-li">
+            <a id="home" class="logo">
+              <img src="/src/logo/logo_nav.png" alt="Logo">
+            </a>
+          </li>
+          <li><a>Gaia</a></li>
+          <li><a>BioQuest</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Your Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    </section>
+
+    <section>
+      <div class="genConsidSec">
+        <div class="genConsidTitle">
+          <h1>General Considerations</h1>
+        </div>
+        <div class="genConsidVid">
+          <div>
+            <img class="firstImg" src="/src/articles images/Ethical debates gene modification/images.jpeg"></img>
+          </div>
+        </div>
+        <div class="videoCourt">
+          <p>Video courtesy: Cognito</p>
+        </div>
+        <div class="firstP">
+          <p>
+            Preserving biodiversity stats with simple yet meaningful actions that generate progressive outcomes
+            such as protecting natural habitats, supporting sustainable
+            practices, reducing pollution, and promoting the conservation of endagered species.
+            Through education, responsible choices, and community efforts, everyone can play a role
+            in maintaining the balance of our ecosystems for future generation.
+          </p>
+        </div>
+      </div>
+      <div class="genConsidSec">
+        <div class="genConsidTitle">
+          <h1>General Considerations</h1>
+        </div>
+        <div class="genConsidVid">
+          <img class="firstImg" src="/src/articles images/Ethical debates gene modification/images.jpeg"></img>
+          <p class="videoCourt">Video courtesy: Cognito</p>
+        </div>
+        <div class="firstP">
+          <p>
+            Preserving biodiversity stats with simple yet meaningful actions that generate progressive outcomes
+            such as protecting natural habitats, supporting sustainable
+            practices, reducing pollution, and promoting the conservation of endagered species.
+            Through education, responsible choices, and community efforts, everyone can play a role
+            in maintaining the balance of our ecosystems for future generation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <section>
+    <div class="goalsSec">
+      <h1 class="goalsText">Goal</h1>
+      <div class="goalLayout">
+        <div class="goalCards">
+          <img src="/src/icons/house_17187768.png" alt="" srcset="">
+          <p>Ensure the safe handling of living modified organisms (LMOs)</p>
+        </div>
+        <div class="goalCards" >
+          <img src="/src/icons/file_12268941.png" alt="" srcset="">
+          <p>Establish procedures for the movement of LMOs</p>
+        </div>
+        <div class="goalCards">
+          <img src="/src/icons/election_17929493.png" alt="" srcset="">
+          <p>Promote Capacity-Building</p>
+        </div>
+        <div class="goalCards"> 
+          <img src="/src/icons/9515689.png" alt="" srcset="">
+          <p>Facilitate the exchange of information</p>
+        </div>
       </div>
     </div>
-    <div class="videoCourt">
-      <p>Video courtesy: Cognito</p>
-    </div>
-    <div class="firstP">
-      <p>
-        Preserving biodiversity stats with simple yet meaningful actions that generate progressive outcomes
-        such as protecting natural habitats, supporting sustainable
-        practices, reducing pollution, and promoting the conservation of endagered species.
-        Through education, responsible choices, and community efforts, everyone can play a role
-        in maintaining the balance of our ecosystems for future generation.
-      </p>
-    </div>
-  </div>
-  <div class="genConsidSec">
-    <div class="genConsidTitle">
-      <h1>General Considerations</h1>
-    </div>
-    <div class="genConsidVid">
-      <img class="firstImg" src="/src/articles images/Ethical debates gene modification/images.jpeg"></img>
-      <p class="videoCourt">Video courtesy: Cognito</p>
-    </div>
-    <div class="firstP">
-      <p>
-        Preserving biodiversity stats with simple yet meaningful actions that generate progressive outcomes
-        such as protecting natural habitats, supporting sustainable
-        practices, reducing pollution, and promoting the conservation of endagered species.
-        Through education, responsible choices, and community efforts, everyone can play a role
-        in maintaining the balance of our ecosystems for future generation.
-      </p>
-    </div>
-  </div>
-
-  <div class="goalsSec">
-    <h1>Goal</h1>
-    <div class="goalLayout">
-      <div>
-        <img src="/src/icons/house_17187768.png" alt="" srcset="">
-        <p>Ensure the safe handling of living modified organisms (LMOs)</p>
-      </div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-      
+  </section>
+  </main>
 </body>
       
       <script>

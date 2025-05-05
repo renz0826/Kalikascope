@@ -159,6 +159,13 @@
   .goldenricecase img{
     height: 30.75rem; width: 75rem
   }
+
+  .goldenricecase small {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
   
   .issuesec{
     display: flex; 

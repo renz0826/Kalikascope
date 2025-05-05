@@ -583,6 +583,7 @@ body::-webkit-scrollbar {
 
   .navbar {
     justify-content: center;
+    margin-bottom: 45px
   }
 
   .navbar ul {
@@ -590,7 +591,7 @@ body::-webkit-scrollbar {
     gap: 0; /* remove spacing to center logo perfectly */
     padding: 0;
     margin: 0;
-    height: 5rem;
+    height: 5rem;;
   }
 
   .navbar li:not(.logo-li) {
@@ -617,6 +618,7 @@ body::-webkit-scrollbar {
     text-align: center;
     padding: 2rem 2rem;
     font-family: var(--font-regular);
+    margin-top: 100px;
   }
 
   .footer-content img{

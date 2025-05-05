@@ -1,5 +1,10 @@
 body{
-    background-color: #edf1e4;
+    background-color: #fefffc;
+}
+
+.title_thoughts{
+    text-align: center;
+    margin-bottom: 45px;
 }
 
 iframe{
@@ -16,7 +21,7 @@ iframe{
     margin-right: auto;
 }
 
-img{
+.head{
     width: 635px;
     border-radius: 5px;
     border: 1px solid #bababa;
@@ -26,13 +31,15 @@ img{
 
     .title_thoughts{
         width: 60%;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
     iframe{
        width: 100%;
     }
     
-    img{
+    .head{
         width: 90%;
         border-radius: 5px;
     }

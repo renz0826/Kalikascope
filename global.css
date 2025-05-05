@@ -72,7 +72,7 @@ html {
 }
 body {
   font-family: var(--font-regular);
-  background-color: #FFFFFF;
+  background-color: #fefffa;
   display: flex; 
   flex-direction: column;
   min-height: 100vh;
@@ -95,6 +95,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .navbar ul {
@@ -111,11 +112,40 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
-.logo {
+#home .logo {
   display: inline-flex;
   align-items: center;
-  cursor: pointer;
-  
+}
+
+.main_nav {
+  text-decoration: none; 
+  color: inherit; 
+  position: relative;
+}
+
+.main_nav:after {
+  content: "";
+  position: absolute;
+  background-color: #8FA856;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s ease;
+}
+
+.main_nav:hover:after {
+  content: "";
+  position: absolute;
+  background-color: #8FA856;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -4px;
+}
+
+.main_nav:hover{
+  color: #4E762E; 
 }
 
 .logo-li {
@@ -233,6 +263,7 @@ body::-webkit-scrollbar {
   text-align: center;
   padding: 5rem 2rem;
   font-family: var(--font-regular);
+  margin-top: 288px;
 }
 
 .footer-content {
@@ -261,10 +292,6 @@ body::-webkit-scrollbar {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-}
-
-.footer-content ul li a:hover  {
-  color: #FFC964; 
 }
 
 .footer-divider {

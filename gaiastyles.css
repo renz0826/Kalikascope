@@ -10,16 +10,15 @@ main{
     margin-right: auto;
 }
 
-.gaia_nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0 auto;
+.gaia_nav img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .the_gaia{
-    width: 600px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
@@ -43,11 +42,13 @@ main{
     main{
         max-width: none;
         margin-left: auto;
+        margin-left: 30px;
         margin-right: auto;
+        margin-right: 30px;
     }
     
     .the_gaia{
-        width: 355px;
+        width: 100%;
     }
 
     .welcome1{

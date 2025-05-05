@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="goldenrice.css" />
+    <title>Golden Rice</title>
+  </head>
+
+  <!-- Hamburger Button -->
+<div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
+  <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+    <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</div>
+
+<!-- Side Menu (hidden by default) -->
+<aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
+  <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
+      <div class="mobile-menu-bg"></div> 
+      <div class="mobile-menu-content">
+        <a class="logomob">
+          <img src="src/logo/logo_nav.png" alt="Logo">
+        </a>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
+                Gaia
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
+                BioQuest
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/logo/about.png" alt="About Icon" class="menu-icon">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
+                Your Feedback
+              </a>
+            </li>
+          </ul>
+        </div>          
+  </nav>
+</aside>
+
+  <!--Navbar Section-->
+<section class="navbar-section">
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li class="logo-li">
+          <a id="home" class="logo">
+            <img src="src/logo/logo_nav.png" alt="Logo">
+          </a>
+        </li>
+        <li><a>Gaia</a></li>
+        <li><a>BioQuest</a></li>
+        <li><a>About Us</a></li>
+        <li><a>Your Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+</section> 
+
+      <section class="goldensec">
+        <!-- Video Section -->
+        <div class="video-container">
+          <h1
+            style="
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              margin: auto;
+            "
+          >
+            GOLDEN RICE
+          </h1>
+          <div>
+            <video
+              width="1200"
+              height="388"
+              poster="src/Golden Rice/goldenthumbnail.png"
+              controls
+            >
+              <source src="src/Golden Rice/goldenrice.mp4" type="video/mp4" />
+            </video>
+            <div class="video-caption">
+              <small>Video Courtesy: International Rice Research Institute</small>
+            </div>
+          </div>
+          <p>
+            Golden Rice is a genetically modified variety of rice (Oryza sativa)
+            engineered to produce beta-carotene (provitamin A, a plant pigment
+            that the body converts into vitamin A as needed). This
+            biofortification aims to address vitamin A deficiency (VAD), a
+            significant health issue in many developing countries where rice is
+            a staple food, by enhancing the nutritional quality of a major
+            dietary source (Welsch & Li, 2022).
+          </p>
+        </div>
+        <!-- End .video-container -->
+
+        <!-- Goal Section -->
+        <section class="goalsec">
+          <h2>Goals</h2>
+          <div class="goal-cards">
+            <div class="card">
+              <img src="src/Golden Rice/Goals/vitamin a.png" />
+              <small>Help Battle Vitamin A Deficiency</small>
+            </div>
+            <div class="card">
+              <img src="src/Golden Rice/Goals/enhance.png" />
+              <small>Enhance the Nutritional Value of Rice</small>
+            </div>
+            <div class="card">
+              <img src="src/Golden Rice/Goals/micronutrient.png" />
+              <small>Address Micronutrient Deficiencies</small>
+            </div>
+            <div class="card">
+              <img src="src/Golden Rice/Goals/food security.png" />
+              <small>Improved Food Security</small>
+            </div>
+          </div>
+          <!-- End .goal-cards -->
+        </section>
+        <!-- End .goalsec -->
+
+        <section class="goldprog">
+          <img src="src/Golden Rice/Golden Rice Process.png" alt="Golden Rice process" />
+          <div class="goldprog-text">
+            <h2>Process of Golden Rice<br>Production</h2>
+            <p>
+              Golden Rice is a genetically engineered rice variety designed to produce beta-carotene, a precursor of vitamin A, in the grain. Rice plants have the metabolic pathway for β-carotene production, but it is inactive in the grain. Scientists introduced the Phytoene Synthase (PSY) gene and Carotene Desaturase (CRT-I) gene to activate this process.
+            </p>
+            <p>
+              The first version used the PSY gene from daffodils, while Golden Rice 2 uses one from maize. An endosperm-specific promoter ensures beta-carotene is produced only in the grain.
+            </p>
+            <p>
+              Modified rice cells grow into mature plants, then cross-bred with local varieties. Golden Rice undergoes rigorous safety testing and regulatory approval (Mayer, 2022).
+            </p>
+          </div>
+        </section>
+        <!--Progress section end-->
+
+        <section class="goldefficacy">
+          <h2>Efficacy</h2>
+          <div class="efflist">
+            <div class="efficacy">
+              <div class="efficacy-header">
+                <img
+                  src="src/Golden Rice/efficacy/rice icon.png"
+                  alt="Rice Icon"
+                />
+                <h3>Beta-Carotene Rich Rice</h3>
+              </div>
+              <p>
+                Golden Rice successfully produces significant amounts of
+                beta-carotene in the grain, which the human body can convert
+                into vitamin A. (Swamy et al., 2019)
+              </p>
+            </div>
+            <div class="efficacy">
+              <div class="efficacy-header">
+                <img
+                  src="src/Golden Rice/efficacy/graph icon.png"
+                  alt="Graph Icon"
+                />
+                <h3>Increases Vitamin A Intake</h3>
+              </div>
+              <p>
+                Clinical studies show that consuming Golden Rice can effectively
+                improve vitamin A levels, especially in populations where rice
+                is a daily staple. (Tang, et al., 2009)
+              </p>
+            </div>
+            <div class="efficacy">
+              <div class="efficacy-header">
+                <img
+                  src="src/Golden Rice/efficacy/world icon.png"
+                  alt="Graph Icon"
+                />
+                <h3>Designed for Local Adaptation</h3>
+              </div>
+              <p style="width: 33.938rem">
+                Golden Rice varieties have been cross-bred with local rice types
+                to ensure they grow well in regional conditions while
+                maintaining high beta-carotene levels. (Golden Rice Project)
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--efficacys end-->
+
+        <section class="goldenricecase">
+          <h2>The Golden Rice Case</h2>
+            <div>
+              <div>
+                <img src="src/Golden Rice/Golden rice case.png" alt="Golden Rice"/>
+                <small>Image Courtesy: Erik de Castro/Reuters</small>
+              </div>
+          <p>
+            The Golden Rice case concerns the development and distribution of a
+            genetically engineered crop intended for alleviating VAD
+            (International Rice Research Institute, 2019). While the scientific
+            community mostly accepts its potential health advantages, the effort
+            has received strong resistance from environmental organizations and
+            several public sectors, causing delays in its implementation .
+          </p>
+            </div>
+        </section>
+        <!--Case END-->
+
+        <section class="issuesec">
+          <h2>Major Issues</h2>
+          <div class="issuelist">
+            <div class="issue">
+              <div class="issue-header">
+                <img
+                  src="src/Golden Rice/major issues/hurdle icon.png"
+                  alt="Hurdle Icon"
+                />
+                <h3>Regulatory Hurdles</h3>
+              </div>
+              <p>
+                Golden Rice's development faced significant regulatory hurdles.
+                For instance, in the Philippines, while the government approved
+                Golden Rice for food, feed, and processing use in December 2019,
+                the application for commercial propagation was only submitted in
+                October 2020, indicating prolonged regulatory processes.
+              </p>
+            </div>
+            <div class="issue">
+              <div class="issue-header">
+                <img
+                  src="src/Golden Rice/major issues/Stop icon.png"
+                  alt="Stop Icon"
+                />
+                <h3>Public Opposition</h3>
+              </div>
+              <p>
+                Environmental groups, notably Greenpeace, have opposed Golden
+                Rice, citing concerns over safety and environmental impact. This
+                opposition led to legal actions; for example, in April 2024, a
+                Philippine court blocked the commercial propagation of Golden
+                Rice due to conflicting scientific views and safety concerns.
+              </p>
+            </div>
+            <div class="issue">
+              <div class="issue-header">
+                <img
+                  src="src/Golden Rice/major issues/megaphone icon.png"
+                  alt="megaphone Icon"
+                />
+                <h3>Misinformation Campagins</h3>
+              </div>
+              <p>
+                Misinformation campaigns have contributed to public skepticism
+                about Golden Rice. For instance, Greenpeace's disinformation
+                campaign against Golden Rice has been noted to influence public
+                perception negatively, despite scientific evidence supporting
+                its safety and efficacy.
+              </p>
+            </div>
+            <div class="issue">
+              <div class="issue-header">
+                <img
+                  src="src/Golden Rice/major issues/Plant Off.png"
+                  alt="Plant off Icon"
+                />
+                <h3>Agronomic Challenges</h3>
+              </div>
+              <p>
+                Early versions of Golden Rice, such as GR2R, exhibited agronomic
+                issues like stunted growth and reduced grain yield. These
+                challenges prompted the development of improved versions like
+                GR2E, which aimed to retain the nutritional benefits while
+                addressing yield concerns.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--end issues-->
+
+        <section class="takeawaysec">
+          <h2>Key Takeaways</h2>
+          <div class="issue-cards">
+            <div class="card">
+              <img src="src/Golden Rice/key takeaways/science.png" />
+              <small>Scientific Innovation Alone is Not Enough</small>
+            </div>
+            <div class="card">
+              <img src="src/Golden Rice/key takeaways/communication.png" />
+              <small>Effective Communication is Critical</small>
+            </div>
+            <div class="card">
+              <img src="src/Golden Rice/key takeaways/process.png" />
+              <small>Regulatory Processes can Delay Life-Saving Solutions</small>
+            </div>
+            <div class="card">
+              <img src="src/Golden Rice/key takeaways/improvements.png" />
+              <small>Continuous Improvement is Necessary</small>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- End .goldensec -->
+       <!--Footer Section-->
+      <section class="footer-section">
+        <footer class="footer">
+          <div class="footer-background"></div>
+          <div class="footer-content">
+            <div class="footer-column footer-logo">
+              <img src="src/logo/logo_footer.png" alt="Logo" />
+            </div>
+            <ul>
+              <li><a href="#">Back to the Gaia</a></li>
+              <li><a href="#">Learn with BioQuest</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">About Kalikascope</a></li>
+              <li><a href="#">Share your Thoughts</a></li>
+            </ul>
+          </div>
+          <div class="footer-divider"></div>
+        </footer>
+      </section>
+    </div>
+    <!-- End .goldenbg -->
+    <script src="global.js"></script>
+  </body>
+  <!-- End .goldenbody -->
+</html>

@@ -1,0 +1,64 @@
+body{
+    background-image: url('src/gaia/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gaia_nav img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.the_gaia{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.welcome1{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+    body{
+        background-size: 900%;
+    }
+
+    main{
+        max-width: none;
+        margin-left: auto;
+        margin-left: 30px;
+        margin-right: auto;
+        margin-right: 30px;
+    }
+    
+    .the_gaia{
+        width: 100%;
+    }
+
+    .welcome1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .welcome_bot{
+        margin-top: -15px;
+    }
+
+}
+

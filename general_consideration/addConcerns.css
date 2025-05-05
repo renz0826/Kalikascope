@@ -1,0 +1,25 @@
+.concern1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 5px;
+
+}
+
+.concernTitle {
+    margin-left: 11px;
+}
+
+.addressingConcerns {
+    padding-bottom: 30px;
+}
+
+.addresConcernTitle {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section3 {
+    padding-bottom: 50px;
+}

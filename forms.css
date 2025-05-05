@@ -1,0 +1,47 @@
+body{
+    background-color: #fefffc;
+}
+
+.title_thoughts{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+iframe{
+   margin-left: auto;
+   margin-right: auto; 
+   width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head{
+    width: 635px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+}
+
+@media (max-width: 768px) {
+
+    .title_thoughts{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    iframe{
+       width: 100%;
+    }
+    
+    .head{
+        width: 90%;
+        border-radius: 5px;
+    }
+
+}

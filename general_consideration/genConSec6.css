@@ -1,24 +1,27 @@
-.sec6Icon {
-    width: 53px;
-}
-
-.subContent {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 10px;
-}
-.secTitles {
-    margin-left: 20px;
-}
-
-.sec6Title {
-    padding-bottom: 50px;
-    text-align: center;
-}
-
-.sec6P {
-    padding-bottom: 40px;
-}
 
 
+@media (min-width: 320px) and (max-width: 768px){
+    .sec6Icon {
+        width: 53px;
+    }
+    
+    .subContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .secTitles {
+        margin-left: 20px;
+    }
+    
+    .sec6Title {
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    
+    .sec6P {
+        padding-bottom: 40px;
+    }
+    
+}

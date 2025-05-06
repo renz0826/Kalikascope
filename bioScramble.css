@@ -1,0 +1,11 @@
+.frpicGrid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+
+.frpics img {
+    width: 100%;
+    height: 50%;
+}

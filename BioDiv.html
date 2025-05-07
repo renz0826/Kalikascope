@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="Bio.css" />
+    <title>Biodiversity</title>
+</head>
+
+<body>
+  <!-- Hamburger Button -->
+ <div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+      <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <!-- Side Menu (auto by default) -->
+<aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
+    <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
+        <div class="mobile-menu-bg"></div> 
+        <div class="mobile-menu-content">
+          <a class="logomob">
+            <img src="src/logo/logo_nav.png" alt="Logo">
+          </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
+                  Gaia
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
+                  BioQuest
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/logo/about.png" alt="About Icon" class="menu-icon">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
+                  Your Feedback
+                </a>
+              </li>
+            </ul>
+          </div>          
+    </nav>
+  </aside>
+  
+    <!--Navbar Section-->
+  <section class="navbar-section">
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li class="logo-li">
+            <a id="home" class="logo">
+              <img src="src/logo/logo_nav.png" alt="Logo">
+            </a>
+          </li>
+          <li><a>Gaia</a></li>
+          <li><a>BioQuest</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Your Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section> 
+  
+        <section class="biodiv">
+          <!-- Video Section -->
+          <div class="video-container">
+            <h1
+              style="
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: auto;
+              "
+            >
+            BIODIVERSITY
+            </h1>
+              <div>
+                <video
+                  width="1200"
+                  height="auto"
+                  controls
+                >
+                <source src="src/Image/Biodiversity.mp4" type="video/mp4" />
+              </video>
+              <div class="video-caption">
+                <small>Video Courtesy: The Royal Society</small>
+              </div>
+            </div>
+            <p>
+              Biodiversity is the variety of life on Earth, including genetic differences, species diversity, and ecosystems.
+          It supports vital services like clean air, water, food, and climate regulation. For example, forests absorb over
+          2.6 billion tonnes of carbon dioxide annually, helping fight climate change (WHO, 2025). However, biodiversity
+          is rapidly declining, with one million species at risk, threatening these essential services and increasing
+          health risks. Though scientists have made progress in understanding biodiversity, much remains unknown, and human
+          actions are accelerating its loss. Urgent action is needed to protect ecosystems and preserve life on Earth
+          (Purvis & Hector, 2000).
+            </p>
+          </div>
+          <!-- End .video-container -->
+
+          <section class="scinnovation">
+            <h2>Scientific Innovation</h2>
+            <div class="innovlist">
+              <div class="innovation">
+                <div class="innovation-header">
+                  <img
+                    src="src/Image/Dome.png" class="innovation-image"
+                    alt="Image"
+                  />
+                  <h3>Start Park</h3>
+                </div>
+                <p>
+                  A project in Italy that creates green,
+                  sustainable urban spaces. It uses plants
+                  and natural methods to clean soil and save
+                  rainwater, helping cities cope with climate
+                  change(Climate Action, 2021).
+                </p>
+              </div>
+              <div class="innovation">
+                <div class="innovation-header">
+                  <img
+                    src="src/Image/Shore.png" class="innovation-image"
+                    alt="Image"
+                  />
+                  <h3>Living Shorelines</h3>
+                </div>
+                <p>
+                  A way to fight coastal erosion by building
+                  artificial reefs with oyster shells instead 
+                  of using expensive seawalls. This is a natural
+                  and cheaper solution(Climate Action, 2021).
+                </p>
+              </div>
+              <div class="innovation">
+                <div class="innovation-header">
+                  <img
+                    src="src/Image/DNA.png" class="innovation-image"
+                    alt="Image"
+                  />
+                  <h3>Frozen Ark</h3>
+                </div>
+                <p style="width: 33.938rem">
+                  A project that stores the DNA of endangered
+                  animals in liquid nitrogen. This helps protect
+                  their gentic information in case the species
+                  goes extinct(Climate Action, 2021).
+                </p>
+              </div>
+            </div>
+          </section>
+          <!--innovations end-->
+          
+          <!--bioyear-->
+          <section class="bioyear">
+            </div>
+            <h2>The 2010 International Year of Biodiversity</h2>
+              <div>
+                <div>
+                  <img src="src/Image/Logo.jpg" alt="Biodiversity"/>
+                  <small>Image Courtesy: Biodiversity Concervation Center</small>
+                </div>
+            <p>
+                The 2010 International Year of Biodiversity, declared by the United Nations, aimed to raise awareness
+                about the importance of biodiversity and encourage actions to protect it. It highlighted the essential
+                role biodiversity plays in human life, affecting food, health, and well-being, and emphasized the 
+                connection between humans and ecosystems (Time and Date, 2010). The year featured educational campaigns, 
+                conferences, and global events, promoting the inclusion of biodiversity in development plans and encouraging 
+                responsible resource use through initiatives like the Green Wave campaign (UNESCO, 2010)
+            </p>
+              </div>
+          </section>
+          <!--Bioyear END-->
+
+      <!-- Significance -->
+      <section class="significance">
+        <h2>Significance</h2>
+        <div class="signi-cards">
+          <div class="card">
+            <img src="src/Image/Eye.png" />
+            <small>Raising Awareness</small>
+          </div>
+          <div class="card">
+            <img src="src/Image/Book.png" />
+            <small>Educational Efforts</small>
+          </div>
+          <div class="card">
+            <img src="src/Image/Bag.png" />
+            <small>Promoting Sustainable Choices</small>
+          </div>
+          <div class="card">
+            <img src="src/Image/Hand.png" />
+            <small>Global Collaboration</small>
+          </div>
+        </div>
+        <!-- End Significance-->
+
+   <!--Footer Section-->
+   <section class="footer-section">
+    <footer class="footer">
+      <div class="footer-background"></div>
+      <div class="footer-content">
+        <div class="footer-column footer-logo">
+          <img src="src/logo/logo_footer.png" alt="Logo" />
+        </div>
+        <ul>
+          <li><a href="#">Back to the Gaia</a></li>
+          <li><a href="#">Learn with BioQuest</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">About Kalikascope</a></li>
+          <li><a href="#">Share your Thoughts</a></li>
+        </ul>
+      </div>
+      <div class="footer-divider"></div>
+    </footer>
+  </section>
+</div>
+<!-- End --->
+<script src="global.js"></script>
+</body>
+<!-- End  body-->
+</html>

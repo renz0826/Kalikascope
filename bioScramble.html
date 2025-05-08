@@ -110,99 +110,101 @@
       </header>
     </section>
 
-    <section class="awg-game">
-      <div class="awg-top">
-        <a class="return_butt" href="index.html">
-          <img src="src/A Wild Guess/return_butt.png" alt="return_butt" />
-        </a>
-        <h2
-          style="
-            color: black;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            grid-column: 2;
-          "
-        >
-          1 of 10
-        </h2>
-      </div>
-
-      <div class="awg-cardA">
-        <h2>What's the word?</h2>
-        <div class="quiz-container">
-          <div class="image-container">
-            <div class="frpicGrid">
-              <div class="frpicsContainer">
-                <div class="frpics">
-                  <img
-                    id="currentImage"
-                    class="frPicImg"
-                    src="src/A Wild Guess/axo hide.png"
-                    alt="Hidden Animal"
-                  />
+    <main>
+      <section class="awg-game">
+        <div class="awg-top">
+          <a class="return_butt" href="index.html">
+            <img src="src/A Wild Guess/return_butt.png" alt="return_butt" />
+          </a>
+          <h2
+            style="
+              color: black;
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+              margin: 0;
+              grid-column: 2;
+            "
+          >
+            1 of 10
+          </h2>
+        </div>
+  
+        <div class="awg-cardA">
+          <h2>What's the word?</h2>
+          <div class="quiz-container">
+            <div class="image-container">
+              <div class="frpicGrid">
+                <div class="frpicsContainer">
+                  <div class="frpics">
+                    <img
+                      id="currentImage"
+                      class="frPicImg"
+                      src="src/A Wild Guess/axo hide.png"
+                      alt="Hidden Animal"
+                    />
+                  </div>
+                  <div class="frpics">
+                    <img
+                      id="currentImage"
+                      class="frPicImg"
+                      src="src/A Wild Guess/axo hide.png"
+                      alt="Hidden Animal"
+                    />
+                  </div>
                 </div>
-                <div class="frpics">
-                  <img
-                    id="currentImage"
-                    class="frPicImg"
-                    src="src/A Wild Guess/axo hide.png"
-                    alt="Hidden Animal"
-                  />
-                </div>
-              </div>
-              <div class="frpicsContainer2">
-                <div class="frpics">
-                  <img
-                    id="currentImage"
-                    class="frPicImg"
-                    src="src/A Wild Guess/axo hide.png"
-                    alt="Hidden Animal"
-                  />
-                </div>
-                <div class="frpics">
-                  <img
-                    id="currentImage"
-                    class="frPicImg"
-                    src="src/A Wild Guess/axo hide.png"
-                    alt="Hidden Animal"
-                  />
+                <div class="frpicsContainer2">
+                  <div class="frpics">
+                    <img
+                      id="currentImage"
+                      class="frPicImg"
+                      src="src/A Wild Guess/axo hide.png"
+                      alt="Hidden Animal"
+                    />
+                  </div>
+                  <div class="frpics">
+                    <img
+                      id="currentImage"
+                      class="frPicImg"
+                      src="src/A Wild Guess/axo hide.png"
+                      alt="Hidden Animal"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="frBlocksGrid">
-            <div id="resultMessage" class="result-message"></div>
-            <form id="quizForm" class="choices-container">
-              <div class="answer-input">
-                <div class="answer-blocks-container">
-                  <div class="answer-blocks-row" id="answerBlocksRow1"></div>
-                  <div
-                    class="answer-blocks-row"
-                    id="answerBlocksRow2"
-                    style="display: none"
-                  ></div>
+            <div class="frBlocksGrid">
+              <div id="resultMessage" class="result-message"></div>
+              <form id="quizForm" class="choices-container">
+                <div class="answer-input">
+                  <div class="answer-blocks-container">
+                    <div class="answer-blocks-row" id="answerBlocksRow1"></div>
+                    <div
+                      class="answer-blocks-row"
+                      id="answerBlocksRow2"
+                      style="display: none"
+                    ></div>
+                  </div>
+                  <div class="letter-count">0/12</div>
                 </div>
-                <div class="letter-count">0/12</div>
-              </div>
-              <div class="scrambled-letters">
-                <!-- Letters will be generated by JavaScript -->
-              </div>
-            </form>
+                <div class="scrambled-letters">
+                  <!-- Letters will be generated by JavaScript -->
+                </div>
+              </form>
+            </div>
           </div>
         </div>
+        <button id="confirmBtn" class="confirm-btn" disabled>
+          <h3 style="color: #ffffff">Confirm</h3>
+        </button>
+      </section>
+  
+      <script src="bioScramble.js"></script>
+  
+      <div id="wrongAnswerPopup" class="wrong-answer-popup">
+        Wrong Answer! Try Again.
       </div>
-      <button id="confirmBtn" class="confirm-btn" disabled>
-        <h3 style="color: #ffffff">Confirm</h3>
-      </button>
-    </section>
-
-    <script src="bioScramble.js"></script>
-
-    <div id="wrongAnswerPopup" class="wrong-answer-popup">
-      Wrong Answer! Try Again.
-    </div>
+    </main>
   </body>
   <div id="resultModal" class="modal">
     <div class="modal-contentA">

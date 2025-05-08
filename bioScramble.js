@@ -296,42 +296,48 @@ function setupEventListeners() {
 }
 
 // Confirm answer
+// Confirm answer
 function confirmAnswer() {
-    // Build user answer including spaces
-    let userAnswer = '';
-    answerBlocks.forEach(block => {
-      if (block.classList.contains('space')) {
-        userAnswer += ' ';
-      } else {
-        userAnswer += block.textContent;
-      }
-    });
-  
-    const correctAnswer = questions[currentQuestion].answer;
-    const resultMessage = document.getElementById('resultMessage');
-  
-    if (userAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
-      // Correct answer handling
-      resultMessage.textContent = 'Correct!';
-      resultMessage.style.color = 'green';
-      score++;
-      
-      setTimeout(() => {
-        resultMessage.textContent = '';
-        currentQuestion++;
-        if (currentQuestion < questions.length) {
-          displayQuestion();
-        } else {
-          endGame();
-        }
-      }, 1500);
+  // Build user answer including spaces
+  let userAnswer = '';
+  answerBlocks.forEach(block => {
+    if (block.classList.contains('space')) {
+      userAnswer += ' ';
     } else {
-      // Wrong answer handling
-      resultMessage.textContent = `Incorrect! The answer was "${correctAnswer}"`;
-      resultMessage.style.color = 'red';
-      setTimeout(() => resultMessage.textContent = '', 3000);
+      userAnswer += block.textContent;
     }
+  });
+
+  const correctAnswer = questions[currentQuestion].answer;
+  const resultMessage = document.getElementById('resultMessage');
+  const wrongAnswerPopup = document.getElementById('wrongAnswerPopup');
+
+  if (userAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
+    // Correct answer handling
+    resultMessage.textContent = 'Correct!';
+    resultMessage.style.color = 'green';
+    score++;
+    
+    setTimeout(() => {
+      resultMessage.textContent = '';
+      currentQuestion++;
+      if (currentQuestion < questions.length) {
+        displayQuestion();
+      } else {
+        endGame();
+      }
+    }, 1500);
+  } else {
+    // Wrong answer handling
+    resultMessage.textContent = '';
+    wrongAnswerPopup.classList.add('show');
+    
+    // Hide the popup after 2 seconds (matches the CSS animation duration)
+    setTimeout(() => {
+      wrongAnswerPopup.classList.remove('show');
+    }, 2000);
   }
+}
 
 // End game and show results
 function endGame() {

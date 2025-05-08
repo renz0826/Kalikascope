@@ -26,13 +26,35 @@ function generateScrambledLetters(answer) {
         {
             answer: "BIODIVERSITY",
             images: [
-                "src/A Wild Guess/axo hide.png",
-                "src/A Wild Guess/axo hide.png",
-                "src/A Wild Guess/axo hide.png",
-                "src/A Wild Guess/axo hide.png"
+                "src/scramble/biodiversity/istockphoto-539675480-1024x1024.jpg",
+                "src/scramble/biodiversity/istockphoto-1136053333-1024x1024.jpg",
+                "src/scramble/biodiversity/istockphoto-1300080105-1024x1024.jpg",
+                "src/scramble/biodiversity/istockphoto-1445720558-1024x1024.jpg"
             ],
             scrambledLetters: [] // Will be auto-generated
-        }
+        },
+
+        {
+                answer: "BIOSAFETY",
+                images: [
+                    "src/A Wild Guess/axo hide.png",
+                    "src/A Wild Guess/axo hide.png",
+                    "src/A Wild Guess/axo hide.png",
+                    "src/A Wild Guess/axo hide.png"
+                ],
+                scrambledLetters: [] // Will be auto-generated
+            },
+
+            {
+                answer: "BIOTECH",
+                images: [
+                    "src/A Wild Guess/axo hide.png",
+                    "src/A Wild Guess/axo hide.png",
+                    "src/A Wild Guess/axo hide.png",
+                    "src/A Wild Guess/axo hide.png"
+                ],
+                scrambledLetters: [] // Will be auto-generated
+            }
         // Add more questions here...
     ];
     

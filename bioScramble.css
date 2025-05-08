@@ -134,9 +134,10 @@
     .answer-block.space {
         width: 10px;
     }
-    
+
     .frpics img {
-        max-height: 120px;
+        height: 97.11px ;
+        width: 100%;
     }
 
     .quiz-container {
@@ -158,14 +159,16 @@
 
     .frpicGrid {
         margin-bottom: 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 
-    .frpics img {
-        width: 80%;
+    .frpics {
+        width: 120px;
     }
 
     .frpicsContainer, .frpicsContainer2 {
-        gap: 0;
+        gap: 10px;
     }
 
     .quiz-container h2 {

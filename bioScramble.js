@@ -1,41 +1,25 @@
-// Function to generate scrambled letters
 function generateScrambledLetters(answer) {
-  const answerLetters = answer.replace(/\s/g, "").toUpperCase().split("");
-  const extraLettersCount = Math.max(3, Math.floor(answerLetters.length * 0.4));
-  const commonLetters = [
-    "A",
-    "E",
-    "I",
-    "O",
-    "U",
-    "S",
-    "T",
-    "N",
-    "R",
-    "D",
-    "L",
-    "C",
-    "M",
-    "P",
-  ];
-
-  const extraLetters = [];
-  for (let i = 0; i < extraLettersCount; i++) {
-    const randomLetter =
-      commonLetters[Math.floor(Math.random() * commonLetters.length)];
-    extraLetters.push(randomLetter);
+    // Get letters without spaces for scrambling
+    const answerLetters = answer.toUpperCase().replace(/\s/g, '').split('');
+    const extraLettersCount = Math.max(3, Math.floor(answerLetters.length * 0.4));
+    const commonLetters = ['A','E','I','O','U','S','T','N','R','D','L','C','M','P'];
+  
+    const extraLetters = [];
+    for (let i = 0; i < extraLettersCount; i++) {
+      const randomLetter = commonLetters[Math.floor(Math.random() * commonLetters.length)];
+      extraLetters.push(randomLetter);
+    }
+  
+    const allLetters = [...answerLetters, ...extraLetters];
+    
+    // Shuffle the letters
+    for (let i = allLetters.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allLetters[i], allLetters[j]] = [allLetters[j], allLetters[i]];
+    }
+  
+    return allLetters;
   }
-
-  const allLetters = [...answerLetters, ...extraLetters];
-
-  // Shuffle the letters
-  for (let i = allLetters.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [allLetters[i], allLetters[j]] = [allLetters[j], allLetters[i]];
-  }
-
-  return allLetters;
-}
 
 // Game data
 const questions = [
@@ -192,38 +176,39 @@ function displayQuestion() {
 }
 
 function createAnswerBlocks(answer) {
-  const answerBlocksRow1 = document.getElementById("answerBlocksRow1");
-  answerBlocksRow1.innerHTML = "";
-  answerBlocks = [];
-
-  const words = answer.split(" ");
-  const isMultiWord = words.length > 1;
-  const totalLetters = answer.replace(/\s/g, "").length; // Count letters excluding spaces
-
-  // Update the letter count display
-  document.querySelector(".letter-count").textContent = `0/${totalLetters}`;
-
-  // Create blocks for each character
-  let charIndex = 0;
-  words.forEach((word, wordIndex) => {
-    // Add word letters
-    for (let i = 0; i < word.length; i++) {
-      const block = document.createElement("div");
-      block.className = "answer-block";
-      block.dataset.index = charIndex++;
-      block.addEventListener("click", () => removeLetterFromBlock(block));
-      answerBlocksRow1.appendChild(block);
-      answerBlocks.push(block);
-    }
-
-    // Add space between words (except after last word)
-    if (wordIndex < words.length - 1) {
-      const space = document.createElement("div");
-      space.className = "answer-block space";
-      answerBlocksRow1.appendChild(space);
-    }
-  });
-}
+    const answerBlocksRow1 = document.getElementById('answerBlocksRow1');
+    answerBlocksRow1.innerHTML = '';
+    answerBlocks = [];
+  
+    const words = answer.split(' ');
+    const totalLetters = answer.replace(/\s/g, '').length;
+  
+    // Update letter count (excluding spaces)
+    document.querySelector('.letter-count').textContent = `0/${totalLetters}`;
+  
+    // Create blocks for each character with spaces
+    let charIndex = 0;
+    words.forEach((word, wordIndex) => {
+      // Add word letters
+      for (let i = 0; i < word.length; i++) {
+        const block = document.createElement('div');
+        block.className = 'answer-block';
+        block.dataset.index = charIndex++;
+        block.addEventListener('click', () => removeLetterFromBlock(block));
+        answerBlocksRow1.appendChild(block);
+        answerBlocks.push(block);
+      }
+  
+      // Add space between words (except after last word)
+      if (wordIndex < words.length - 1) {
+        const space = document.createElement('div');
+        space.className = 'answer-block space';
+        space.textContent = ' '; // Visual space
+        answerBlocksRow1.appendChild(space);
+        answerBlocks.push(space);
+      }
+    });
+  }
 
 function createScrambledLetters(letters) {
   const scrambledLettersContainer =
@@ -244,22 +229,21 @@ function createScrambledLetters(letters) {
 
 // Handle letter selection from scrambled letters
 function selectLetter(letterElement) {
-  if (letterElement.classList.contains("used")) return;
-
-  // Find first empty answer block
-  const emptyBlock = answerBlocks.find(
-    (block) => !block.textContent && !block.classList.contains("space")
-  );
-
-  if (emptyBlock) {
-    emptyBlock.textContent = letterElement.textContent;
-    emptyBlock.classList.add("filled");
-    letterElement.classList.add("used");
-    usedLetters.push({ letterElement, block: emptyBlock });
-
-    updateLetterCount();
+    if (letterElement.classList.contains('used')) return;
+  
+    // Find first empty non-space block
+    const emptyBlock = answerBlocks.find(block => 
+      !block.textContent && !block.classList.contains('space')
+    );
+  
+    if (emptyBlock) {
+      emptyBlock.textContent = letterElement.textContent;
+      emptyBlock.classList.add('filled');
+      letterElement.classList.add('used');
+      usedLetters.push({letterElement, block: emptyBlock});
+      updateLetterCount();
+    }
   }
-}
 
 // Handle removing letter from answer block
 function removeLetterFromBlock(block) {
@@ -281,19 +265,14 @@ function removeLetterFromBlock(block) {
 
 // Update letter count
 function updateLetterCount() {
-  const filledCount = answerBlocks.filter(
-    (block) => block.textContent && !block.classList.contains("space")
-  ).length;
-
-  const totalCount = questions[currentQuestion].answer.replace(
-    /\s/g,
-    ""
-  ).length;
-  document.querySelector(
-    ".letter-count"
-  ).textContent = `${filledCount}/${totalCount}`;
-  document.getElementById("confirmBtn").disabled = filledCount !== totalCount;
-}
+    const filledCount = answerBlocks.filter(block => 
+      block.textContent && !block.classList.contains('space')
+    ).length;
+  
+    const totalCount = questions[currentQuestion].answer.replace(/\s/g, '').length;
+    document.querySelector('.letter-count').textContent = `${filledCount}/${totalCount}`;
+    document.getElementById('confirmBtn').disabled = filledCount !== totalCount;
+  }
 
 // Setup event listeners
 function setupEventListeners() {
@@ -318,50 +297,41 @@ function setupEventListeners() {
 
 // Confirm answer
 function confirmAnswer() {
-  const userAnswer = answerBlocks
-    .filter((block) => !block.classList.contains("space"))
-    .map((block) => block.textContent)
-    .join("");
-
-  const correctAnswer = questions[currentQuestion].answer.replace(/\s/g, "");
-  const resultMessage = document.getElementById("resultMessage");
-  const wrongAnswerPopup = document.getElementById("wrongAnswerPopup");
-
-  if (userAnswer === correctAnswer) {
-    resultMessage.textContent = "Correct!";
-    resultMessage.style.color = "green";
-    score++;
-
-    // Move to next question or end game
-    setTimeout(() => {
-      resultMessage.textContent = "";
-      currentQuestion++;
-
-      if (currentQuestion < questions.length) {
-        displayQuestion();
+    // Build user answer including spaces
+    let userAnswer = '';
+    answerBlocks.forEach(block => {
+      if (block.classList.contains('space')) {
+        userAnswer += ' ';
       } else {
-        endGame();
+        userAnswer += block.textContent;
       }
-    }, 1500);
-  } else {
-    // Show wrong answer popup
-    wrongAnswerPopup.classList.add("show");
-
-    // Hide after 2 seconds
-    setTimeout(() => {
-      wrongAnswerPopup.classList.remove("show");
-    }, 2000);
-
-    // Also show in result message
-    resultMessage.textContent = `Incorrect! The answer was ${questions[currentQuestion].answer}`;
-    resultMessage.style.color = "red";
-
-    // Clear the message after 3 seconds
-    setTimeout(() => {
-      resultMessage.textContent = "";
-    }, 3000);
+    });
+  
+    const correctAnswer = questions[currentQuestion].answer;
+    const resultMessage = document.getElementById('resultMessage');
+  
+    if (userAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
+      // Correct answer handling
+      resultMessage.textContent = 'Correct!';
+      resultMessage.style.color = 'green';
+      score++;
+      
+      setTimeout(() => {
+        resultMessage.textContent = '';
+        currentQuestion++;
+        if (currentQuestion < questions.length) {
+          displayQuestion();
+        } else {
+          endGame();
+        }
+      }, 1500);
+    } else {
+      // Wrong answer handling
+      resultMessage.textContent = `Incorrect! The answer was "${correctAnswer}"`;
+      resultMessage.style.color = 'red';
+      setTimeout(() => resultMessage.textContent = '', 3000);
+    }
   }
-}
 
 // End game and show results
 function endGame() {

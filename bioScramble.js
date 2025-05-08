@@ -222,27 +222,42 @@ function generateScrambledLetters(answer) {
         
         const correctAnswer = questions[currentQuestion].answer.replace(/\s/g, '');
         const resultMessage = document.getElementById('resultMessage');
+        const wrongAnswerPopup = document.getElementById('wrongAnswerPopup');
         
         if (userAnswer === correctAnswer) {
             resultMessage.textContent = "Correct!";
             resultMessage.style.color = "green";
             score++;
+            
+            // Move to next question or end game
+            setTimeout(() => {
+                resultMessage.textContent = "";
+                currentQuestion++;
+                
+                if (currentQuestion < questions.length) {
+                    displayQuestion();
+                } else {
+                    endGame();
+                }
+            }, 1500);
         } else {
+            // Show wrong answer popup
+            wrongAnswerPopup.classList.add('show');
+            
+            // Hide after 2 seconds
+            setTimeout(() => {
+                wrongAnswerPopup.classList.remove('show');
+            }, 2000);
+            
+            // Also show in result message
             resultMessage.textContent = `Incorrect! The answer was ${questions[currentQuestion].answer}`;
             resultMessage.style.color = "red";
-        }
-        
-        // Move to next question or end game
-        setTimeout(() => {
-            resultMessage.textContent = "";
-            currentQuestion++;
             
-            if (currentQuestion < questions.length) {
-                displayQuestion();
-            } else {
-                endGame();
-            }
-        }, 1500);
+            // Clear the message after 3 seconds
+            setTimeout(() => {
+                resultMessage.textContent = "";
+            }, 3000);
+        }
     }
     
     // End game and show results
@@ -257,6 +272,7 @@ function generateScrambledLetters(answer) {
         currentQuestion = 0;
         score = 0;
         document.getElementById('resultModal').style.display = "none";
+        document.getElementById('wrongAnswerPopup').classList.remove('show');
         displayQuestion();
     }
     

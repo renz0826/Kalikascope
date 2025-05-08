@@ -3,9 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="biotech.css" />
     <title>Biotechnology</title>
 </head>
+
+  <!-- Hamburger Button -->
+<div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+      <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  
+  <!-- Side Menu (hidden by default) -->
+  <aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
+    <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
+        <div class="mobile-menu-bg"></div> 
+        <div class="mobile-menu-content">
+          <a class="logomob">
+            <img src="src/logo/logo_nav.png" alt="Logo">
+          </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
+                  Gaia
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
+                  BioQuest
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/logo/about.png" alt="About Icon" class="menu-icon">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
+                  Your Feedback
+                </a>
+              </li>
+            </ul>
+          </div>          
+    </nav>
+  </aside>
+  
+    <!--Navbar Section-->
+  <section class="navbar-section">
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li class="logo-li">
+            <a id="home" class="logo">
+              <img src="src/logo/logo_nav.png" alt="Logo">
+            </a>
+          </li>
+          <li><a>Gaia</a></li>
+          <li><a>BioQuest</a></li>
+          <li><a>About Us</a></li>
+          <li><a>Your Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+
 <body>
+  <div class="body">
+
+  <!-- Video section -->
     
+  <section class = "videosection">
+    
+    <h1 class="centertitle">BIOTECHNOLOGY</h1>
+    
+    <div class = "video">
+        <video
+        width="1200"
+        height="450"
+        poster="src\Biotech page\biotech-header.jpg"
+        controls
+      >
+        <source src="src/Biotech page/Biotech.mp4" type="video/mp4" alt="Biotechnology video" />
+      </video>
+    </div>
+
+    <div class="courtesy"><small>Video courtesy: Jairenz Batu</small></div>
+
+    <p class = "vidimg_info">
+        Biotechnology is a scientific field that utilizes living organisms, to develop technologies and
+        products intended to improve human life (AL-Eitan & Alnemri, 2022). Often referred to as Biotech, 
+        it has existed since the beginning of civilization with the domestication of plants, animals, and 
+        the discovery of fermentation (Lewis & Barney, 2019). Biotechnology combines biology with engineering 
+        and technology to create solutions in medicine, agriculture, industry, and environmental conservation. 
+        It plays a crucial role in addressing global challenges such as disease, hunger, pollution, and 
+        sustainable energy.
+    </p>
+
+</section>
+    <!-- Video section - END -->
+
+<section class="principlessection">
+    <h2 class="centertitle">Scientific Principles</h2>
+
+    <div class="principles">
+        <div class="geneticengineering">
+            <div class="iconandtitle">
+                <img src="src\Biotech page\icons8-geneticengineering.png" alt="Genetic Engineering Icon" class="icon">
+                <h3 class="titleforicon1">Genetic Engineering</h3>
+            </div>
+
+                <p class="iconinfo">To manipulate and modify the genetic material of an organism to incorporate desirable traits. 
+                    The main pillar of genetic engineering is recombinant DNA technology, which is a technique to 
+                    alter the genes of an organism by inserting the desired gene into a host (Byjus, 2017).</p>
+        </div>
+
+        <div class="bioprocess">
+            <div class="iconandtitle">
+                <img src="src\Biotech page\icons8-bioprocess.png" alt="bioprocess engineering icon" class="icon">
+                <h3 class="titleforicon2">Bioprocess Engineering</h3>
+            </div>
+
+                <p  class="iconinfo">Focuses on designing and optimizing biological and mechanical processes required to create 
+                        various products within life sciences (KGI, 2020).
+                </p>
+        </div>
+    </div>
+
+    <!-- Principles section - END -->
+
+    <!-- Genetic modification section -->
+    <section class = "videosection">
+        <h2 class="centertitle">GENETIC MODIFICATION</h2>
+        
+        <div class = "video">
+            <img src="src/Biotech page/Genetic modification_iStock.png" alt="Genetic Modification" class="img" width="1200" height="450">
+        </div>
+    
+        <div class="courtesy"><small>Image courtesy: newsbytesapp</small></div>
+    
+        <p class = "vidimg_info">
+            Genetically Modified Organisms, are organisms whose genome has been engineered in the laboratory in
+             order to favour the expression of desired physiological traits or the generation of desired biological
+              products (Diaz & Fridovich-Keil, 2018).
+        </p>
+    
+    </section>
+    <!-- genetic modification - END -->
+
+    <section class="process">
+        <div class="processimgandcourtesy">
+            <img src="src\Biotech page\GMOprocess_Britannica.png" alt="Genetic Modification Process" class="vertimg" width="491" height="833">
+            <div class="courtesy"><small>Image courtesy: iStock</small></div>
+        </div>
+
+        <div class="processtitleandinfo">
+            <h2 class="processtitle">Process of Genetic Modification</h2>
+
+            <p class="processinfo1">
+                Genetic modification involves scientific methods that may include DNA extraction 
+                and gene isolation, rDNA construction, and gene insertion. It uses recombinant DNA technology and 
+                reproductive cloning. In reproductive cloning, a nucleus is extracted from a cell of the individual 
+                to be cloned and is inserted into the enucleated cytoplasm of a host egg. 
+            </p>
+            <p class="processinfo2">   
+                The process results in the generation of an offspring that is genetically identical to the donor 
+                individual. Recombinant DNA technology, on the other hand, involves the insertion of one or more 
+                individual genes from an organism of one species into the DNA of another. Which results in the 
+                organism possessing the desired genetic makeup (Diaz & Fridovich-Keil, 2018).
+            </p>
+        </div>
+    </section>
+
+    <!-- Process - END -->
+
+    <!-- GMO section -->
+    <section class = "videosection">
+        <h2 class="centertitle">GENETICALLY MODIFIED ORGANISMS (GMO)</h2>
+
+        <div class = "video">
+            <img src="src\Biotech page\GMO_newsbytesapp.png" alt="Genetic Modification" class="img" width="1200" height="450">
+        </div>
+    
+        <div class="courtesy"><small>Image courtesy: iStock</small></div>
+    
+        <p class = "vidimg_info">
+            Genetic Modification is the process of altering the genetic makeup of an organism. This has been done 
+            indirectly for thousands of years by controlled, or selective, breeding of plants and animals. Modern 
+            biotechnology has made it easier and faster to target a specific gene for more precise alteration of 
+            the organism through genetic engineering (Ross, 2019).
+        </p>
+    
+    </section>
+
+    <!-- GMO section - END -->
+    <section class="cropsection">
+        <h2 class="centertitle">Crop GMOs</h2>
+
+        <div class="issue-cards">
+            <div class="card">
+              <img  id="corn" src="src\Biotech page\BTcorn.png" width="120px" height="120px"/>
+              <small>BT Corn</small>
+            </div>
+            <div class="card">
+              <img src="src\Biotech page\Papaya.png" width="148px" height="148px"/>
+              <small>Rainbow Papaya</small>
+            </div>
+            <div class="card">
+              <img src="src\Biotech page\Aquadvantage salmon.png" width="148px" height="148px"/>
+              <small>AquAdvantage Salmon</small>
+            </div>
+            <div class="card">
+              <img src="src\Biotech page\BTcotton.png" width="148px" height="148px"/>
+              <small>BT Cotton</small>
+            </div>
+          </div>
+    </section>
+
+    <!-- Crop section - END -->
+
+    <!-- Benefits of gmo section -->
+    <section id="benefits" class="principlessection">
+        <h2 class="centertitle">Benefits of GMOs</h2>
+    
+        <div class="principles">
+            <div class="geneticengineering">
+                <div class="iconandtitle">
+                    <img src="src\Biotech page\icons8-agriculture-100 (2).png" alt="Genetic Engineering Icon" class="icon">
+                    <h3 class="titleforicon1">Agricultural</h3>
+                </div>
+    
+                    <p  class="iconinfo">GMOs are engineered for higher productivity, thus increasing crop yields and helping to address food security. 
+                        They also enhance nutritional value, such as the biofortified GMOs like Golden Rice, which combat malnutrition.</p>
+            </div>
+    
+            <div class="bioprocess">
+                <div class="iconandtitle">
+                    <img src="src\Biotech page\icons8-environmental-100.png" alt="bioprocess engineering icon" class="icon">
+                    <h3 class="titleforicon2">Environmental</h3>
+                </div>
+    
+                    <p  class="iconinfo">Pest-resistant GMOs decrease reliance on synthetic pesticides, lowering soil and water pollution. 
+                        Drought-tolerant and nitrogen-efficient crops reduce water and fertilizer use.
+                    </p>
+            </div>
+
+            <div class="bioprocess">
+                <div class="iconandtitle">
+                    <img src="src\Biotech page\icons8_medical.png" alt="bioprocess engineering icon" class="icon">
+                    <h3 class="titleforicon2">Medical & Pharmaceutical</h3>
+                </div>
+    
+                    <p  class="iconinfo">GMOs help produce pharmaceuticals and vaccines, develop diagnostic tests, and enable gene therapy for treating
+                         genetic diseases. They also allow researchers to study the functions of genes in human and animal diseases.
+                    </p>
+            </div>
+
+            <div class="bioprocess">
+                <div class="iconandtitle">
+                    <img src="src\Biotech page\icons8-economic-growth-100.png" alt="bioprocess engineering icon" class="icon">
+                    <h3 class="titleforicon2">Economic</h3>
+                </div>
+    
+                    <p  class="iconinfo">GMOs help increase farm incomes, reduce pesticide use, and potentially lower food prices.
+                    </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits of gmo section - END -->
+
+<!-- Body - END -->
+</div>
+
 </body>
+
+<footer>
+      <!--Footer Section-->
+<section class="footer-section">
+    <footer class="footer">
+      <div class="footer-background"></div>
+      <div class="footer-content">
+          <div class="footer-column footer-logo">
+              <img src="src/logo/logo_footer.png" alt="Logo">
+          </div>
+              <ul>
+                  <li><a href="index.html">Back to the Gaia</a></li>
+                  <li><a href="#">Learn with BioQuest</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#">About Kalikascope</a></li>
+                  <li><a href="Forms.html">Share your Thoughts</a></li>
+              </ul>
+      </div>
+      <div class="footer-divider"></div>
+  </footer>
+  </section>
+  
+
+  
+  <script src="global.js"></script>
+  
+</footer>
 </html>

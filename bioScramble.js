@@ -43,6 +43,8 @@ function generateScrambledLetters(answer) {
     
     // Initialize the game
     function initGame() {
+        // Set the total questions count
+        document.getElementById('totalQuestions').textContent = questions.length;
         displayQuestion();
         setupEventListeners();
     }
@@ -79,6 +81,10 @@ function generateScrambledLetters(answer) {
         
         const words = answer.split(' ');
         const isMultiWord = words.length > 1;
+        const totalLetters = answer.replace(/\s/g, '').length; // Count letters excluding spaces
+        
+        // Update the letter count display
+        document.querySelector('.letter-count').textContent = `0/${totalLetters}`;
         
         // Create blocks for each character
         let charIndex = 0;
@@ -100,8 +106,6 @@ function generateScrambledLetters(answer) {
                 answerBlocksRow1.appendChild(space);
             }
         });
-        
-        document.querySelector('.letter-count').textContent = `0/${answer.replace(/\s/g, '').length}`;
     }
     
     function createScrambledLetters(letters) {
@@ -222,6 +226,7 @@ function generateScrambledLetters(answer) {
     // End game and show results
     function endGame() {
         document.getElementById('finalScore').textContent = score;
+        document.getElementById('totalQuestions').textContent = questions.length;
         document.getElementById('resultModal').style.display = "block";
     }
     

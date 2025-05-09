@@ -296,7 +296,6 @@ function setupEventListeners() {
 }
 
 // Confirm answer
-// Confirm answer
 function confirmAnswer() {
   // Build user answer including spaces
   let userAnswer = '';
@@ -311,18 +310,23 @@ function confirmAnswer() {
   const correctAnswer = questions[currentQuestion].answer;
   const resultMessage = document.getElementById('resultMessage');
   const wrongAnswerPopup = document.getElementById('wrongAnswerPopup');
+  const confirmButton = document.getElementById('confirmBtn'); // Reference the confirm button
+
+  // Disable the confirm button to prevent repeated clicks
+  confirmButton.disabled = true;
 
   if (userAnswer.toUpperCase() === correctAnswer.toUpperCase()) {
     // Correct answer handling
     resultMessage.textContent = 'Correct!';
     resultMessage.style.color = 'green';
     score++;
-    
+
     setTimeout(() => {
       resultMessage.textContent = '';
       currentQuestion++;
       if (currentQuestion < questions.length) {
         displayQuestion();
+        confirmButton.disabled = false; // Re-enable the button for the next question
       } else {
         endGame();
       }
@@ -331,10 +335,11 @@ function confirmAnswer() {
     // Wrong answer handling
     resultMessage.textContent = '';
     wrongAnswerPopup.classList.add('show');
-    
+
     // Hide the popup after 2 seconds (matches the CSS animation duration)
     setTimeout(() => {
       wrongAnswerPopup.classList.remove('show');
+      confirmButton.disabled = false; // Re-enable the button after wrong answer handling
     }, 2000);
   }
 }

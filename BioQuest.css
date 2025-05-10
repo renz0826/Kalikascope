@@ -1,0 +1,115 @@
+body{
+    background: 
+    linear-gradient(180deg, rgba(255, 255, 255, 0.00) 80%, #FFFF 100%), /* Gradient layer */
+    url("src/gaia/bg.png") no-repeat center top;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* Section Styles */
+.cards-section {
+  display: flex;
+  width: 75rem;
+  align-items: flex-end;
+  align-content: flex-end;
+  gap: 2.8125rem 8.75rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+  margin: 0 auto; /* Center the section within the page */
+}
+
+/* Card Styles */
+.card {
+  display: flex;
+  width: 33.125rem;
+  height: 40rem;
+  padding: 0.9375rem 3.75rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  background: #fff;
+  box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00),
+    22px 49px 21px 0px rgba(0, 0, 0, 0.01),
+    13px 27px 18px 0px rgba(0, 0, 0, 0.05),
+    6px 12px 13px 0px rgba(0, 0, 0, 0.09),
+    1px 3px 7px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* Card Image Styles */
+.card-image {
+  height: 14.625rem;
+  border-radius: 0.4375rem;
+  background: #D9D9D9;
+  object-fit: cover; /* Ensure the image fits within the dimensions */
+  width: 100%;
+}
+
+/* Card Paragraph Styles */
+.card p {
+  text-align: left;
+  line-height: 1.5;
+  color: #333;
+  height: 11.25rem;
+  width: 25.625rem;
+}
+
+.play-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.4375rem;
+  height: 3.1875rem;
+  border-radius: 1.25rem;
+  background: #8fa856;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+  background: #7a9448; /* Darker green on hover */
+}
+
+
+@media (max-width: 768px) {
+
+  .cards-section {
+    align-items: center; 
+    gap: 2rem; 
+    width: 100%; 
+  }
+
+
+  .card {
+    width: 20rem; 
+    height: 28.125rem;
+    padding: 1rem; 
+  }
+
+  .card-image {
+    width: 18.25rem; 
+    height: 9.125rem; 
+    border-radius: 0.4375rem; 
+  }
+
+
+  .card small {
+    text-align: left; 
+    line-height: 1.4; 
+  }
+
+
+  .play-button {
+    width: 9.4375rem; 
+    height: 3.1875rem; 
+    border-radius: 1.25rem; 
+    font-size: 1rem;
+  }
+}

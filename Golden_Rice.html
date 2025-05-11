@@ -9,69 +9,69 @@
     <title>Golden Rice</title>
   </head>
 
-   <!-- Hamburger Button -->
-    <div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
-        <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-    </div>
-    
-    <!-- Side Menu (hidden by default) -->
-    <aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
-        <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
-            <div class="mobile-menu-bg"></div> 
-            <div class="mobile-menu-content">
-            <a class="logomob">
-                <img src="src/logo/logo_nav.png" alt="Logo">
-            </a>
-                <ul>
-                <li>
-                    <a href="index.html">
-                    <img src="src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
-                    Gaia
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
-                    BioQuest
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="src/logo/about.png" alt="About Icon" class="menu-icon">
-                    About Us
-                    </a>
-                </li>
-                <li>
-                    <a href="Forms.html">
-                    <img src="src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
-                    Your Feedback
-                    </a>
-                </li>
-                </ul>
-            </div>          
-        </nav>
-    </aside>
-    
-        <!--Navbar Section-->
-    <section class="navbar-section">
-        <header>
-        <nav class="navbar">
-            <ul>
-            <li class="logo-li">
-                <div id="home" class="logo">
-                <img src="src/logo/logo_nav.png" alt="Logo">
-                </div>
-            </li>
-            <li><a class="main_nav" href="index.html">Gaia</a></li>
-            <li><a class="main_nav" >BioQuest</a></li>
-            <li><a class="main_nav" href ="about.html" >About Us</a></li>
-            <li><a class="main_nav" href="Forms.html">Your Feedback</a></li>
-            </ul>
-        </nav>
-        </header>
-    </section> 
+     <!-- Hamburger Button -->
+     <div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+      <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+  </div>
+  
+  <!-- Side Menu (hidden by default) -->
+  <aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
+      <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
+          <div class="mobile-menu-bg"></div> 
+          <div class="mobile-menu-content">
+          <a class="logomob">
+              <img src="src/logo/logo_nav.png" alt="Logo">
+          </a>
+              <ul>
+              <li>
+                  <a href="index.html">
+                  <img src="src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
+                  Gaia
+                  </a>
+              </li>
+              <li>
+                  <a href="BioQuest.html">
+                  <img src="src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
+                  BioQuest
+                  </a>
+              </li>
+              <li>
+                  <a href="about.html">
+                  <img src="src/logo/about.png" alt="About Icon" class="menu-icon">
+                  About Us
+                  </a>
+              </li>
+              <li>
+                  <a href="Forms.html">
+                  <img src="src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
+                  Your Feedback
+                  </a>
+              </li>
+              </ul>
+          </div>          
+      </nav>
+  </aside>
+  
+      <!--Navbar Section-->
+  <section class="navbar-section">
+      <header>
+      <nav class="navbar">
+          <ul>
+          <li class="logo-li">
+              <div id="home" class="logo">
+              <img src="src/logo/logo_nav.png" alt="Logo">
+              </div>
+          </li>
+          <li><a class="main_nav" href="index.html">Gaia</a></li>
+          <li><a class="main_nav" href="BioQuest.html" >BioQuest</a></li>
+          <li><a class="main_nav" href ="about.html" >About Us</a></li>
+          <li><a class="main_nav" href="Forms.html">Your Feedback</a></li>
+          </ul>
+      </nav>
+      </header>
+  </section> 
 
       <section class="goldensec">
         <!-- Video Section -->
@@ -81,7 +81,7 @@
               display: flex;
               align-items: center;
               flex-direction: column;
-              margin-bottom: 45px;
+              margin-bottom: 24px;
             "
           >
             GOLDEN RICE
@@ -322,12 +322,12 @@
               <img src="src/logo/logo_footer.png" alt="Logo" />
             </div>
             <ul>
-              <li><a href="#">Back to the Gaia</a></li>
-              <li><a href="#">Learn with BioQuest</a></li>
+              <li><a href="index.html">Back to the Gaia</a></li>
+              <li><a href="BioQuest.html">Learn with BioQuest</a></li>
             </ul>
             <ul>
-              <li><a href="#">About Kalikascope</a></li>
-              <li><a href="#">Share your Thoughts</a></li>
+              <li><a href="about.html">About Kalikascope</a></li>
+              <li><a href="Forms.html">Share your Thoughts</a></li>
             </ul>
           </div>
           <div class="footer-divider"></div>

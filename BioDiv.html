@@ -5,73 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="global.css" />
     <link rel="stylesheet" href="Bio.css" />
+    <link rel="icon" href="src/logo/favicon.ico" type="image/x-icon">
     <title>Biodiversity</title>
 </head>
 
 <body>
-  <!-- Hamburger Button -->
- <div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+    <!-- Hamburger Button -->
+    <div class="hamburger" id="hamburgerIcon" aria-label="Toggle menu" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
       <path d="M4.875 9.75H34.125M4.875 19.5H34.125M4.875 29.25H34.125" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+      </svg>
   </div>
-  <!-- Side Menu (auto by default) -->
-<aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
-    <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
-        <div class="mobile-menu-bg"></div> 
-        <div class="mobile-menu-content">
+  
+  <!-- Side Menu (hidden by default) -->
+  <aside id="mobileOverlay" class="mobile-overlay" onclick="closeMenu()">
+      <nav class="mobile-menu" id="mobileMenu" role="navigation" onclick="event.stopPropagation()">
+          <div class="mobile-menu-bg"></div> 
+          <div class="mobile-menu-content">
           <a class="logomob">
-            <img src="src/logo/logo_nav.png" alt="Logo">
+              <img src="src/logo/logo_nav.png" alt="Logo">
           </a>
-            <ul>
+              <ul>
               <li>
-                <a href="#">
+                  <a href="index.html">
                   <img src="src/logo/gaia.png" alt="Gaia Icon" class="menu-icon">
                   Gaia
-                </a>
+                  </a>
               </li>
               <li>
-                <a href="#">
+                  <a href="BioQuest.html">
                   <img src="src/logo/bioquest.png" alt="BioQuest Icon" class="menu-icon">
                   BioQuest
-                </a>
+                  </a>
               </li>
               <li>
-                <a href="#">
+                  <a href="about.html">
                   <img src="src/logo/about.png" alt="About Icon" class="menu-icon">
                   About Us
-                </a>
+                  </a>
               </li>
               <li>
-                <a href="#">
+                  <a href="Forms.html">
                   <img src="src/logo/feedback.png" alt="Feedback Icon" class="menu-icon">
                   Your Feedback
-                </a>
+                  </a>
               </li>
-            </ul>
+              </ul>
           </div>          
     </nav>
   </aside>
   
-    <!--Navbar Section-->
+      <!--Navbar Section-->
   <section class="navbar-section">
-    <header>
+      <header>
       <nav class="navbar">
-        <ul>
+          <ul>
           <li class="logo-li">
-            <a id="home" class="logo">
+              <div id="home" class="logo">
               <img src="src/logo/logo_nav.png" alt="Logo">
-            </a>
+              </div>
           </li>
-          <li><a>Gaia</a></li>
-          <li><a>BioQuest</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Your Feedback</a></li>
-        </ul>
+          <li><a class="main_nav" href="index.html">Gaia</a></li>
+          <li><a class="main_nav" href="BioQuest.html" >BioQuest</a></li>
+          <li><a class="main_nav" href ="about.html" >About Us</a></li>
+          <li><a class="main_nav" href="Forms.html">Your Feedback</a></li>
+          </ul>
       </nav>
-    </header>
+      </header>
   </section> 
-  
+  <main>
         <section class="biodiv">
           <!-- Video Section -->
           <div class="video-container">
@@ -89,6 +91,7 @@
                 <video
                   width="1200"
                   height="auto"
+                  poster="src/Image/biodivcover.jpg"
                   controls
                 >
                 <source src="src/Image/Biodiversity.mp4" type="video/mp4" />
@@ -169,7 +172,7 @@
               <div>
                 <div>
                   <img src="src/Image/Logo.jpg" alt="Biodiversity"/>
-                  <small>Image Courtesy: Biodiversity Concervation Center</small>
+                  <small>Image Courtesy: Biodiversity Conservation Center</small>
                 </div>
             <p>
                 The 2010 International Year of Biodiversity, declared by the United Nations, aimed to raise awareness
@@ -182,6 +185,7 @@
               </div>
           </section>
           <!--Bioyear END-->
+        </section>
 
       <!-- Significance -->
       <section class="significance">
@@ -204,31 +208,32 @@
             <small>Global Collaboration</small>
           </div>
         </div>
-        <!-- End Significance-->
-
-   <!--Footer Section-->
-   <section class="footer-section">
+      
+      </section>  <!-- End Significance-->
+    </main>
+  <!--Footer Section-->
+  <section class="footer-section">
     <footer class="footer">
       <div class="footer-background"></div>
       <div class="footer-content">
-        <div class="footer-column footer-logo">
-          <img src="src/logo/logo_footer.png" alt="Logo" />
-        </div>
-        <ul>
-          <li><a href="#">Back to the Gaia</a></li>
-          <li><a href="#">Learn with BioQuest</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">About Kalikascope</a></li>
-          <li><a href="#">Share your Thoughts</a></li>
-        </ul>
+          <div class="footer-column footer-logo">
+              <img src="src/logo/logo_footer.png" alt="Logo">
+          </div>
+              <ul>
+                  <li><a href="index.html">Back to the Gaia</a></li>
+                  <li><a href="BioQuest.html">Learn with BioQuest</a></li>
+              </ul>
+              <ul>
+                  <li><a href="about.html">About Kalikascope</a></li>
+                  <li><a href="Forms.html">Share your Thoughts</a></li>
+              </ul>
       </div>
       <div class="footer-divider"></div>
-    </footer>
+  </footer>
   </section>
-</div>
+</body>
 <!-- End --->
 <script src="global.js"></script>
-</body>
+
 <!-- End  body-->
 </html>

@@ -1,16 +1,8 @@
 /*Biodiversity*/
 
-.body{
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    min-height: 100%;
-    gap: 120px;
-    margin: 0 auto;
-    
+  main{
+    width: 100%;
   }
-  
   .biobackground {
     background: 
       linear-gradient(180deg, rgba(255, 255, 255, 0.00) 80%, #FFFFFF 100%),
@@ -24,7 +16,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    gap: 7.5rem;
+    gap: 128px;
   }
   
   .significance{
@@ -32,17 +24,18 @@
         align-items: center;
         flex-direction: column;
         gap: 2.375rem;
-        width: 75rem;
+        margin-top: 128px;
   }
 
   .video-container {
     display: flex;
     flex-direction: column; 
-    width: 1200px;  
-    margin: 0 auto; 
+    margin-left: auto; 
+    margin-right: auto;
   }
   
   .video-container video {
+    margin-top: 45px;  
     display: block; 
     width: 100%;  
   }
@@ -51,6 +44,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    margin-top: 20px;
     margin-bottom: 1rem;
   }
   
@@ -112,6 +106,7 @@
     justify-content: flex-end;
     width: 100%;
     margin-bottom: 1rem;
+    margin-top: 20px;
   }
 
   .signi-cards{
@@ -139,206 +134,26 @@
   }
   
   .card img{
-    width: 9.25rem;
-    height: 9.25rem;
+    width: 100%;
     flex-shrink: 0;
   }
   
   /*mobile query*/
   @media (max-width: 768px){
-    /*Fonts*/
-    :root {
-      --h1-size: 32px;
-      --h1-weight: 600;
-  
-      --h2-size: 24px;
-      --h2-weight: 500;
-  
-      --h3-size: 18px;
-      --h3-weight: 500;
-  
-      --p-size: 14px;
-      --p-weight: 400;
-  
-      --small-size: 12px;
-      --small-weight: 400;
-    }
-  
-  
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow-x: auto;
-    }
-  
-    /*Nav Bar*/
-    .hamburger {
-      display: block;
-    }
-  
-    .navbar {
-      justify-content: center;
-    }
-  
-    .navbar ul {
-      justify-content: center;
-      gap: 0; 
-      padding: 0;
-      margin: 0;
-      height: 5rem;
-    }
-  
-    .navbar li:not(.logo-li) {
-      display: none;
-    }
-  
-    .logo-li {
-      margin: 0;
-    }
-  
-    .logo {
-      margin: 0;
-      justify-content: center;
-    }
-  
-  
-    .logo img {
-      height: 3.125rem;
-      width: 12.1875rem; 
-    }
-  
-    .footer {
-      background: linear-gradient(93deg, #8FA856 0%, #4E762E 100%);  color: white;
-      text-align: center;
-      padding: 2rem 2rem;
-      font-family: var(--font-regular);
-    }
-  
-    .footer-content img{
-    width: 12.3125rem;
-    height: 5.84963rem;
-    flex-shrink: 0;
-    }
-  
-    .footer-content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      width: auto;
-      height: 25.75rem;
-      margin: 0 auto;
-      gap: 0rem;
-      font-weight: 500;
-    }
-  
-    .footer-divider {
-      height: 2px;
-      background: white;
-      margin: 0rem auto 0 auto;
-      width: 20rem;
-    }
-  
-    .footer-content ul {
-      width: 50%;
-      padding: 0;
-      margin: 0 auto;
-      text-align: left;
-      display: block;
-    }
-    
-    .footer-content ul li {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-  
-    
-    /*awg*/
-    .return_butt{
-      left: calc(50% - 10rem)
-    }
-  
-    .confirm-btn{
-      margin-bottom: 4rem;
-    }
-
-    .awg-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; 
-      align-items: center;
-      width: 20rem;
-      height: 40.375rem;
-      padding: 1rem; 
-      gap: 1rem;
-    }
-    
-    .image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%; 
-      height: auto; 
-    }
-    
-    .awg-card img {
-      width: 18.25rem;
-      height: 10.5rem;
-      object-fit: contain;
-      margin: 0;
-    }
-  
-    .choices-container {
-       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      width: 100%;
-      justify-content: center;
-  }
-  
-    .result-message{
-      top: 47%;
-    }
-  
-    .modal-content {
-      display: flex;
-      flex-direction: column; 
-      align-items: center; 
-      justify-content: center; 
-      gap: 1rem;
-      height: 30rem;
-    }
-  
-    .modal-content a {
-      padding: 0.5rem 1rem;
-      margin: 0;
-      width: auto; 
-      text-align: center;
-      border-radius: 1rem;
-      background: #8FA856;
-      color: #ffffff;
-      text-decoration: none;
-    }
-  
-    .choices-container .choice-item span {
-      font-size: var(--h3-size);
-    }
-
     .biodiv{
       width: 20rem;
       margin: 0 auto;
-      gap: 4rem;
+      gap: 68px;
       }
     
       .video-container video {
-        width: 320px;
-        height: 157px;
+        width: 100%;
         object-fit: cover;
+        margin-top: 24px;
       }
     
       .video-container {
-        width: 320px;
+        width: 100%;
         height: auto;
       }
       .video-container p{
@@ -358,6 +173,14 @@
         column-gap: 2rem;
         row-gap: 2rem;
       }
+
+      .scinnovation{
+        gap: 24px;
+      }
+
+      .innovation-header{
+        gap: 12px;
+      } 
       
       .innovation {
         display: flex;
@@ -383,16 +206,18 @@
       }
 
       .significance {
+        margin-top: 68px;
         width: 20rem;
-        margin: 0 auto; 
         height: 31.625rem;
+        margin-left: auto;
+        margin-right: auto;
       }
     
       .signi-cards .card {
         border-radius: 0.9375rem;
         display: flex;
         width: 8.6875rem;
-        height: 11.625rem;
+        height: auto;
         padding: 0.9375rem 1.125rem;
         flex-direction: column;
         align-items: center;
@@ -400,8 +225,7 @@
       }
     
       .card img{
-        width: 4.625rem;
-        height: 4.625rem;
+        width: 100%;
       }
 
       
@@ -409,6 +233,11 @@
         width: 20rem;
         margin: 0 auto;
         gap: 2rem;
+        text-align: center;
+      }
+
+      .bioyear p{
+        text-align: left;
       }
       
       .bioyear img {

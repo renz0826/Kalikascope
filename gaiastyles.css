@@ -21,6 +21,9 @@ main{
     margin-right: auto;
     display: block;
 }
+.welcome{
+    color: black;
+}
 
 .welcome1{
     display: flex;

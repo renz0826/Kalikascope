@@ -16,7 +16,7 @@ body{
   gap: 2.8125rem 8.75rem;
   flex-wrap: wrap;
   justify-content: center; /* Center the cards horizontally */
-  margin: 0 auto; /* Center the section within the page */
+  margin: 0 auto 300px auto; /* Center the section within the page */
 }
 
 /* Card Styles */
@@ -84,6 +84,7 @@ body{
     align-items: center; 
     gap: 2rem; 
     width: 100%; 
+    margin-bottom: 120px;
   }
 
 

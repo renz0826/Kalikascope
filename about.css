@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url(https://fonts.cdnfonts.com/css/nature-spirit);
+html{
+    margin: 0 auto;
+}
 
 .teamShiTits {
     font-family: 'Nature Spirit';
@@ -80,12 +83,11 @@
     background-image: url(src/about_page/Group\ 34.png);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .teamContainer{
     width: 1200px;
-    height: 750px;
+    height: auto;
 }
 
 .teamShi {
@@ -116,8 +118,8 @@
 @media (max-width: 768px) {
     
     .about-container{
-        margin-left: 30px;
-        margin-right: 30px;
+        margin: 0 auto;
+        padding: 0 20px;
         gap: 64px;
         width: 100%;
         margin-bottom: 44px;
@@ -136,7 +138,8 @@
         justify-content: center;
         text-align: center;
         font-family: 'Nature Spirit';
-        font-size: 80px;
+        font-size: 36px;
+        margin-bottom: 24px;
     }
     
     .main-items{
@@ -182,9 +185,23 @@
             text-align: left;
         }
     }
-    
+    .teams{
+        height: auto;
+    }
+
+    .teamShi{
+        margin: 0 auto;
+    }
+
+    .teamShiTits {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
     .teamContainer{
-        width: 100%;
+        width: auto;
+        margin: 0 auto;
+        padding: 0 20px;
     }
     
     .teamShi {
@@ -198,10 +215,7 @@
         /* for team picture */
         .teamContainer {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            margin-left: auto;
-            margin-right: auto;
-            gap: 4rem;
+            grid-template-columns: 1fr;
         }
     
         img {

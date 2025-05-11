@@ -10,15 +10,11 @@
     
   }
   
-  .goldenbg {
-    background: 
-      linear-gradient(180deg, rgba(255, 255, 255, 0.00) 80%, #FFFF 100%), /* Gradient layer */
-      url("src/gaia/bg.png") no-repeat center top;
-    background-size: cover;
+  body {
+    background-image: url(src/Biotech\ page/bg.png);
+    background-repeat: no-repeat;
     width: 100%;
-    height: 67.5rem;
   }
-  
   
   
   .goldensec{
@@ -43,19 +39,22 @@
     display: flex;
     flex-direction: column; 
     width: 1200px; 
+    height: auto;
     margin: 0 auto; 
   }
   
   .video-container video {
     display: block; 
-    width: 100%;  
+    width: 100%; 
+    height: auto; 
   }
   
   .video-container small {
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 28px;;
+    margin-top: 17px;
   }
   
   .video-container p {

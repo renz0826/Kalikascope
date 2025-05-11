@@ -1,4 +1,7 @@
-
+body{
+    background-image: url(src/Biotech\ page/bg.png);
+    background-repeat: no-repeat;
+}
 
 
 .genConsidTitle {
@@ -122,6 +125,23 @@
   column-gap: 20px;
   padding-bottom: 70px;
 }
+
+.mainGrid .items {
+      display: flex;
+    width: 249px;
+    height: 333px;
+    padding: 24px 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+
+/* Card Shadows */
+box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 22px 49px 21px 0px rgba(0, 0, 0, 0.01), 13px 27px 18px 0px rgba(0, 0, 0, 0.05), 6px 12px 13px 0px rgba(0, 0, 0, 0.09), 1px 3px 7px 0px rgba(0, 0, 0, 0.10);
+
+}
 .mainGrid2 {
   display: flex;
   flex-direction: row;
@@ -131,26 +151,19 @@
 }
 
 .mainGrid2 .items {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 18px;
-  padding-left: 18px;
-  border-radius: 15px;
-  height: 390px;
-  width: 250px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
-}
+    display: flex;
+    width: 249px;
+    height: 333px;
+    padding: 24px 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
 
-
-.mainGrid .items {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 18px;
-  padding-left: 18px;
-  border-radius: 15px;
-  height: 390px;
-  width: 250px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+/* Card Shadows */
+box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 22px 49px 21px 0px rgba(0, 0, 0, 0.01), 13px 27px 18px 0px rgba(0, 0, 0, 0.05), 6px 12px 13px 0px rgba(0, 0, 0, 0.09), 1px 3px 7px 0px rgba(0, 0, 0, 0.10);
 }
 
 .mainGrid img{
@@ -201,15 +214,19 @@
 }
 
 .sec5Items {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 18px;
-  padding-right: 18px;
-  border-radius: 15px;
-  width: 250px;
-  height: 390px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    width: 249px;
+    height: 333px;
+    padding: 24px 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
 
+/* Card Shadows */
+box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 22px 49px 21px 0px rgba(0, 0, 0, 0.01), 13px 27px 18px 0px rgba(0, 0, 0, 0.05), 6px 12px 13px 0px rgba(0, 0, 0, 0.09), 1px 3px 7px 0px rgba(0, 0, 0, 0.10);
 }
 
 .section5 {
@@ -234,15 +251,19 @@
 }
 
 .goalCards {
-  width: 250px;
-  height: 390px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 18px;
-  padding-right: 18px;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+    display: flex;
+    width: 249px;
+    height: 420px;
+    padding: 24px 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
 
+/* Card Shadows */
+box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 22px 49px 21px 0px rgba(0, 0, 0, 0.01), 13px 27px 18px 0px rgba(0, 0, 0, 0.05), 6px 12px 13px 0px rgba(0, 0, 0, 0.09), 1px 3px 7px 0px rgba(0, 0, 0, 0.10);
 }
 
 .section2 {
@@ -325,15 +346,19 @@
   }
 
   .goalCards {
-    height: 200px;
-    width: 166px;
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    display: flex;
+    width: 249px;
+    height: 333px;
+    padding: 24px 48px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
     border-radius: 15px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
-    
+    background: #FFF;
+
+/* Card Shadows */
+box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 22px 49px 21px 0px rgba(0, 0, 0, 0.01), 13px 27px 18px 0px rgba(0, 0, 0, 0.05), 6px 12px 13px 0px rgba(0, 0, 0, 0.09), 1px 3px 7px 0px rgba(0, 0, 0, 0.10);
   }
   
   .goalLayout img {

@@ -590,7 +590,7 @@ body::-webkit-scrollbar {
   margin-bottom: 20px;
   z-index: 999999999; 
   left: 65vw;  
-  top: 90vh;
+  top: 88vh;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;

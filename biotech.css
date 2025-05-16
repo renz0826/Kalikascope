@@ -1,6 +1,6 @@
-.body{
+.main{
     width: 100%;
-    padding: 0 20%;
+    padding: 0 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -105,6 +105,10 @@
     align-items: center;
     gap: 1.5rem;
     margin-left: 15px;
+}
+
+.cropsection{
+    width: 100%;
 }
 
 .card{

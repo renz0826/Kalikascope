@@ -31,6 +31,15 @@ function toggleMenu() {
       }
     }
 
+document.getElementById("exit").addEventListener("click", function() {
+    let toast = document.getElementById("toast");
+    toast.classList.add("hidden"); 
+
+    setTimeout(() => {
+        toast.style.display = "none"; 
+  });
+});
+
 // Add this to global.js
 const quizData = [
   {

@@ -104,6 +104,14 @@
     <script src="mapresizer-min.js"></script>
     <script src="global.js"></script>
     <script>
+        document.getElementById("exit").addEventListener("click", function() {
+    let toast = document.getElementById("toast");
+    toast.classList.add("hidden"); 
+
+    setTimeout(() => {
+        toast.style.display = "none"; 
+  });
+});
 
         imageMapResize();
 

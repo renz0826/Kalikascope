@@ -1,0 +1,55 @@
+main {
+    padding: 0 20%;
+}
+
+h1 {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.reference {
+    width: 90%;
+    padding: 5%;
+    border-radius: 15px;
+    box-shadow: 35px 76px 23px 0px rgba(0, 0, 0, 0.00), 
+                22px 49px 21px 0px rgba(0, 0, 0, 0.01), 
+                13px 27px 18px 0px rgba(0, 0, 0, 0.05), 
+                6px 12px 13px 0px rgba(0, 0, 0, 0.09), 
+                1px 3px 7px 0px rgba(0, 0, 0, 0.10);
+    margin: 0 auto;
+    margin-bottom: 128px;
+}
+
+.reference p {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%; /* Ensuring full-width utilization */
+    word-wrap: break-word; /* Fixing link overflow */
+    overflow-wrap: break-word;
+}
+
+.reference a {
+    font-style: none;
+    color: #4E762E;
+    display: inline-block;
+    max-width: 100%; /* Ensuring links don’t overflow */
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 0px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .reference {
+        width: 90%; /* Adjust width for better mobile formatting */
+        padding: 20px;
+        margin-bottom: 90px;
+    }
+
+    .reference p {
+        width: 100%;
+    }
+}

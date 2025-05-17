@@ -2,9 +2,10 @@
 
   main{
     width: 100%;
-    padding: 0 10%;
+    padding: 0 20%;
     align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .biobackground {
@@ -145,7 +146,14 @@
   
   /*mobile query*/
   @media (max-width: 768px){
-    .biodiv{
+      main{
+      width: 100%;
+      padding: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+      .biodiv{
       width: 20rem;
       margin: 0 auto;
       gap: 68px;
